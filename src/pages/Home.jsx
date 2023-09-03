@@ -8,7 +8,6 @@ export default function Home() {
         spacing={3}
         alignItems="center"
         justify="space-around"
-
       >
         <img
           src="/firstImage.jpeg"
@@ -22,16 +21,26 @@ export default function Home() {
           <span style={{ color: "red" }}>user</span> by Allan Chassanoff in the{" "}
           <span style={{ color: "skyblue" }}>Read and Note</span> Platform
         </Typography>
-        <Stack direction="row" alignItems={"center"} justifyContent={"center"}  >
-          <Typography variant="h6" color="skyblue" >
+        <Stack direction="row" alignItems={"center"} justifyContent={"center"}>
+          <Typography variant="h6" color="skyblue">
             Pick a Topic
           </Typography>
-          <img src="/SecondImage.jpeg" style={{maxWidth:"56%",margin:"auto"}} />
+          <img
+            src="/SecondImage.jpeg"
+            style={{ maxWidth: "56%", margin: "auto" }}
+          />
           <Typography variant="h6" color="skyblue">
             Any Topic
           </Typography>
         </Stack>
-        <Typography variant="h6" color="white" sx={{fontSize:"0.6rem",width:"100%",textAlign:"center"}}>any questions regarding this site should be address to info@readandnote.com</Typography>
+        <Typography
+          variant="h6"
+          color="white"
+          sx={{ fontSize: "0.6rem", width: "100%", textAlign: "center" }}
+        >
+          any questions regarding this site should be address to
+          info@readandnote.com
+        </Typography>
       </Stack>
     </>
   );
