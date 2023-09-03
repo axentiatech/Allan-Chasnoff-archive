@@ -8,6 +8,9 @@ const theme = createTheme({
     background:{
       default:"#fff"
     },
+    text:{
+      default:"#fff"
+    }
   },
   typography: {
     fontFamily: 'Poppins, Arial, sans-serif', 
