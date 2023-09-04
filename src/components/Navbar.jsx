@@ -83,7 +83,7 @@ const Navbar = () => {
             PaperProps={{
               elevation: 0,
               sx: {
-                bgcolor: "skyblue",
+                bgcolor: "#409aba",
                 overflow: "visible",
                 filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                 mt: 1.5,
@@ -101,7 +101,7 @@ const Navbar = () => {
                   right: 14,
                   width: 10,
                   height: 10,
-                  bgcolor: "skyblue",
+                  bgcolor: "#409aba",
                   transform: "translateY(-50%) rotate(45deg)",
                   zIndex: 0,
                 },
@@ -110,7 +110,7 @@ const Navbar = () => {
             transformOrigin={{ horizontal: "right", vertical: "top" }}
             anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
           >
-            <MenuItem>
+            <MenuItem >
               <Avatar /> <Typography variant="h6">Allan Chassanoff</Typography>
             </MenuItem>
             <MenuItem sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)"}} onClick={()=>{handleClose(); navigate('/')}} >
