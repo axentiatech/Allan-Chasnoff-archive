@@ -66,7 +66,7 @@ const Navbar = () => {
           <MenuIcon
             id="drop-button"
             fontSize="large"
-            style={{ color: "#409aba", cursor: "pointer" }}
+            sx={{ color: "#409aba", cursor: "pointer" }}
             onClick={handleClick}
             aria-controls={open ? "drop-menu" : undefined}
             aria-haspopup="true"
