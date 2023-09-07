@@ -8,6 +8,7 @@ import {
   CircularProgress,
   Modal,
   Box,
+  IconButton,
 } from "@mui/material";
 import { Resizable } from "re-resizable";
 import { useState, useEffect } from "react";
@@ -18,13 +19,11 @@ import CreateIcon from "@mui/icons-material/Create";
 import styled from "@emotion/styled";
 import Input from "./Input";
 import Chat from "./Chat";
-import CloseIcon from '@mui/icons-material/Close';
-
+import CloseIcon from "@mui/icons-material/Close";
 
 const MenuLib = (props) => {
   const [progress, setProgress] = useState(0);
 
-  
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
@@ -171,15 +170,19 @@ const MenuLib = (props) => {
                   "&:hover": {
                     backgroundColor: "#5c9ff9",
                   },
+                  fontSize: {
+                    xs: "0.5rem",
+                    lg: "0.7rem",
+                  },
                 }}
                 variant="contained"
               >
-                <ShareIcon /> Open
+                <ShareIcon sx={{ fontSize: "2em" }} /> Open
               </Button>
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
               <Button
-              disabled
+                disabled
                 onClick={() => {
                   setBar(true);
                   setProgress(0);
@@ -190,11 +193,15 @@ const MenuLib = (props) => {
                   "&:hover": {
                     backgroundColor: "#5c9ff9",
                   },
+                  fontSize: {
+                    xs: "0.5rem",
+                    lg: "0.7rem",
+                  },
                 }}
                 variant="contained"
               >
                 {" "}
-                <SaveIcon /> Ingested
+                <SaveIcon sx={{ fontSize: "2em" }} /> Ingested
               </Button>
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
@@ -207,15 +214,30 @@ const MenuLib = (props) => {
                   "&:hover": {
                     backgroundColor: "#5c9ff9",
                   },
+                  fontSize: {
+                    xs: "0.5rem",
+                    lg: "0.7rem",
+                  },
                 }}
                 variant="contained"
               >
-                <CreateIcon /> Question
+                <CreateIcon sx={{ fontSize: "2em" }} /> Question
               </Button>
               <Modal open={openModal} onClose={handleModalClose}>
-                  <Box sx={style}>
-                    <Input namespace={name} />
-                  </Box>
+                <Box sx={style}>
+                  <IconButton
+                    onClick={handleModalClose}
+                    style={{
+                      position: "absolute",
+                      right: 0,
+                      top: 0,
+                      color: "black",
+                    }}
+                  >
+                    <CloseIcon />
+                  </IconButton>
+                  <Input namespace={name} />
+                </Box>
               </Modal>
             </MenuItem>
           </Stack>

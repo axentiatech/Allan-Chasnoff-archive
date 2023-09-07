@@ -70,8 +70,8 @@ export default function Chat(props) {
   };
 
   return (
-    <div className="flex-1">
-      <Button style={{ marginTop: "3%" }} onClick={onDownloadButtonClick}>
+    <div >
+      <Button variant="contained"   onClick={onDownloadButtonClick}>
         Download
       </Button>
     </div>

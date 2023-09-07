@@ -13,11 +13,9 @@ import SendIcon from "@mui/icons-material/Send";
 import axios from "axios";
 import { Resizable } from "re-resizable";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
-import DownloadIcon from '@mui/icons-material/Download';
-
+import DownloadIcon from "@mui/icons-material/Download";
 
 const Input = (props) => {
-
   const name_space = props.namespace;
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState(null);
@@ -48,7 +46,7 @@ const Input = (props) => {
         padding: "2px",
         cursor: "nwse-resize",
         zIndex: 2,
-        transform:"rotate(40deg)"
+        transform: "rotate(40deg)",
       }}
     >
       <IconButton>
@@ -84,14 +82,17 @@ const Input = (props) => {
       <Resizable
         defaultSize={{
           width: window.innerWidth * 0.8,
-          height: window.innerHeight * 0.4,
+          height: window.innerHeight * 0.6,
         }}
         style={{ margin: "auto" }}
         handleComponent={{
           bottomRight: ResizeHandle,
         }}
       >
-        <Stack direction={"row"} alignItems={"center"}>
+        <Stack direction={"row"} alignItems={"center"} sx={{marginTop:{
+          xs:"5%",
+          lg:"2%"
+        }}}>
           <TextField
             fullWidth
             type="text"
@@ -116,7 +117,7 @@ const Input = (props) => {
           sx={{
             maxHeight: "50vh",
             minHeight: "20vh",
-            maxWidth: "90%",
+            maxWidth: "100%",
             overflowY: "auto",
             overflowX: "hidden",
             margin: "auto",
@@ -126,19 +127,32 @@ const Input = (props) => {
           {chats.map((chat, idx) => {
             return (
               <Stack key={idx} sx={{ marginRight: "2%" }}>
-                <Typography sx={{ marginBottom: "3%" }}>
+                <Typography
+                  sx={{
+                    marginBottom: "3%",
+                    wordWrap: "break-word", // breaks lengthy words to prevent overflow
+                    overflowWrap: "break-word", // for better browser support
+                    width: "90%", // reduces the width to provide space for other elements
+                  }}
+                >
                   <strong>Question</strong>.<br />
                   {chat.question}?
                 </Typography>
-                <Typography sx={{ marginBottom: "3%" }}>
+                <Typography
+                  sx={{
+                    marginBottom: "3%",
+                    wordWrap: "break-word", // breaks lengthy words to prevent overflow
+                    overflowWrap: "break-word", // for better browser support
+                    width: "90%", // reduces the width to provide space for other elements
+                  }}
+                >
                   <strong>Answer</strong>. {chat.answer}
                 </Typography>
               </Stack>
             );
           })}
-          
+          <Chat namespace={name_space} />
         </Box>
-      <Chat namespace={name_space} />
       </Resizable>
     </>
   );
