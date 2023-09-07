@@ -7,8 +7,9 @@ import {
   LinearProgress,
   CircularProgress,
   Modal,
-  Box
+  Box,
 } from "@mui/material";
+import { Resizable } from "re-resizable";
 import { useState, useEffect } from "react";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ShareIcon from "@mui/icons-material/Share";
@@ -17,10 +18,13 @@ import CreateIcon from "@mui/icons-material/Create";
 import styled from "@emotion/styled";
 import Input from "./Input";
 import Chat from "./Chat";
+import CloseIcon from '@mui/icons-material/Close';
+
 
 const MenuLib = (props) => {
   const [progress, setProgress] = useState(0);
 
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
@@ -80,9 +84,7 @@ const MenuLib = (props) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "80%",
-    margin:"auto",
-    bgcolor: "background.paper",
+    bgcolor: "#f2f2f2",
     border: "2px solid #000",
     boxShadow: 24,
     p: 2,
@@ -196,8 +198,8 @@ const MenuLib = (props) => {
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
               <Button
-              disabled={bar ? true: false}
-              onClick={handleModalOpen}
+                disabled={bar ? true : false}
+                onClick={handleModalOpen}
                 sx={{
                   backgroundColor: "#5c9cc8",
                   color: "white",
@@ -209,16 +211,10 @@ const MenuLib = (props) => {
               >
                 <CreateIcon /> Question
               </Button>
-              <Modal
-                open={openModal}
-                onClose={handleModalClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                <Typography>To add chat</Typography>
-                  {/* <Chat namespace = {name} /> */}
-                </Box>
+              <Modal open={openModal} onClose={handleModalClose}>
+                  <Box sx={style}>
+                    <Input namespace={name} />
+                  </Box>
               </Modal>
             </MenuItem>
           </Stack>

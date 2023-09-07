@@ -31,16 +31,18 @@ export default function Library() {
       setBooksArray(data);
     } catch (err) {
       console.log(err);
-    }
-    finally{
-      setLoading(false)
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
     <Card
       sx={{
-        marginTop: "3%",
+        marginTop: {
+          xs: "10%",
+          lg: "2%",
+        },
         maxHeight: "80vh",
         overflowY: "auto",
         minHeight: "60vh",
@@ -64,12 +66,20 @@ export default function Library() {
               <div key={id}>
                 <Stack
                   direction="row"
-                  sx={{ marginTop: "3%" }}
+                  sx={{
+                    marginTop: {
+                      xs: "5%",
+                      lg: "2%",
+                    },
+                  }}
                   alignItems={"center"}
                   justifyContent={"space-between"}
                   spacing={6}
                 >
-                <img src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg" style={{width:"15%"}} />
+                  <img
+                    src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
+                    style={{ width: "10%" }}
+                  />
                   <Typography
                     variant="h6"
                     align="center"
@@ -77,16 +87,16 @@ export default function Library() {
                       cursor: "pointer",
                       "&:hover": { textDecoration: "underline" },
                       fontSize: "0.9rem",
-                      minWidth:"60%",
-                      maxWidth:"60%",
-                      wordWrap:"break-word",
-                      whiteSpace:"normal",
+                      minWidth: "60%",
+                      maxWidth: "60%",
+                      wordWrap: "break-word",
+                      whiteSpace: "normal",
                     }}
                     color={"#45accf"}
                   >
                     {elem.name}
                   </Typography>
-                  <MenuLib pdf={elem}/>
+                  <MenuLib pdf={elem} />
                 </Stack>
                 <Divider
                   variant="fullWidth"
