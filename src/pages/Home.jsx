@@ -1,9 +1,25 @@
 import { Stack, Typography } from "@mui/material";
-
+import axios from "axios";
+import { useEffect } from "react";
 export default function Home() {
+
+  useEffect(()=>{
+      axios.get("https://allanarchive-backend.onrender.com/").then((res)=>{
+        console.log(res.data);
+      }).catch((err)=>{
+        console.log(err);
+      })
+
+      axios.get("https://gpt6-backend.onrender.com/").then((res)=>{
+        console.log(res.data);
+      }).catch((err)=>{
+        console.log(err);
+      })
+  },[])
+
   return (
     <>
-      <Stack
+      {/* <Stack
         direction="column"
         spacing={3}
         alignItems="center"
@@ -41,7 +57,7 @@ export default function Home() {
           any questions regarding this site should be address to
           info@readandnote.com
         </Typography>
-      </Stack>
+      </Stack> */}
     </>
   );
 }

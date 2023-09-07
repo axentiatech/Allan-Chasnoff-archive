@@ -179,6 +179,7 @@ const MenuLib = (props) => {
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
               <Button
+              disabled
                 onClick={() => {
                   setBar(true);
                   setProgress(0);
@@ -193,7 +194,7 @@ const MenuLib = (props) => {
                 variant="contained"
               >
                 {" "}
-                <SaveIcon /> Ingest
+                <SaveIcon /> Ingested
               </Button>
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>

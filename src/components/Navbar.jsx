@@ -16,7 +16,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import WorkIcon from '@mui/icons-material/Work';
+import WorkIcon from "@mui/icons-material/Work";
 import { ContactMail, LaptopMac, Person } from "@mui/icons-material";
 import { useNavigate } from "react-router";
 const Navbar = () => {
@@ -41,11 +41,11 @@ const Navbar = () => {
     setOpen(false);
   };
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
-      <Container sx={{ marginTop: "1%"}}>
+      <Container sx={{ marginTop: "1%" }}>
         <Stack
           direction="row"
           alignItems="center"
@@ -110,25 +110,64 @@ const Navbar = () => {
             transformOrigin={{ horizontal: "right", vertical: "top" }}
             anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
           >
-            <MenuItem >
-              <Avatar /> <Typography variant="h6">Allan Chassanoff</Typography>
+            <MenuItem>
+              <Avatar />{" "}
+              <Typography variant="h6" color="white">
+                Allan Chassanoff
+              </Typography>
             </MenuItem>
-            <MenuItem sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)"}} onClick={()=>{handleClose(); navigate('/')}} >
-              <HomeIcon sx={{ color: "white" }} /> <Typography sx={{marginLeft:"10%"}}>Home</Typography>
+            <MenuItem
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+              onClick={() => {
+                handleClose();
+                navigate("/");
+              }}
+            >
+              <HomeIcon sx={{ color: "white" }} />{" "}
+              <Typography sx={{ marginLeft: "10%" }} color={"white"}>
+                Home
+              </Typography>
             </MenuItem>
-            <MenuItem onClick={()=>{handleClose(); navigate('/library')}} sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)"}}>
-              <AutoStoriesIcon sx={{ color: "white" }} /> <Typography sx={{marginLeft:"10%"}}>Library</Typography>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/library");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              <AutoStoriesIcon sx={{ color: "white" }} />{" "}
+              <Typography sx={{ marginLeft: "10%" }} color={"white"}>Library</Typography>
             </MenuItem>
-            <MenuItem onClick={()=>{handleClose(); navigate('/words')}} sx={{borderBottom: "1px solid rgba(255,255,255,0.5)"}}>
-              <WorkIcon sx={{ color: "white" }} /> <Typography sx={{marginLeft:"10%"}}>Words</Typography>
+            {/* <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/words");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              <WorkIcon sx={{ color: "white" }} />{" "}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>Words</Typography>
             </MenuItem>
-            <MenuItem onClick={()=>{handleClose(); navigate('/about')}} sx={{borderBottom: "1px solid rgba(255,255,255,0.5)"}}>
-              <LaptopMac sx={{ color: "white" }} /> <Typography sx={{marginLeft:"10%"}}>About</Typography>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/about");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              <LaptopMac sx={{ color: "white" }} />{" "}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>About</Typography>
             </MenuItem>
-            <MenuItem onClick={()=>{handleClose(); navigate('/contact')}} sx={{borderBottom: "1px solid rgba(255,255,255,0.5)"}}>
-              <Person sx={{ color: "white" }} /> <Typography sx={{marginLeft:"10%"}}>Contact</Typography>
-            </MenuItem>
-            
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/contact");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              <Person sx={{ color: "white" }} />{" "}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>Contact</Typography>
+            </MenuItem> */}
           </Menu>
         </Stack>
       </Container>

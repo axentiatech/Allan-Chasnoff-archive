@@ -87,8 +87,8 @@ export default function Library() {
                       cursor: "pointer",
                       "&:hover": { textDecoration: "underline" },
                       fontSize: "0.9rem",
-                      minWidth: "60%",
-                      maxWidth: "60%",
+                      minWidth: "50%",
+                      maxWidth: "50%",
                       wordWrap: "break-word",
                       whiteSpace: "normal",
                     }}
