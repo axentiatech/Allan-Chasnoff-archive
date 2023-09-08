@@ -69,12 +69,14 @@ const Input = (props) => {
       .then((res) => {
         const fetchedanswer = res.data.message.answer;
         setAnswer(res.data.message.answer);
-        setChats([...chats, { question: question, answer: fetchedanswer }]);
+        setChats([{ question: question, answer: fetchedanswer } , ...chats]);
         setLoading(false);
+        setQuestion('');
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
+        setQuestion('');
       });
   }
   return (
@@ -94,6 +96,7 @@ const Input = (props) => {
           lg:"2%"
         }}}>
           <TextField
+            value={question}
             fullWidth
             type="text"
             onChange={(e) => {
