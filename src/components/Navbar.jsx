@@ -53,7 +53,7 @@ const Navbar = () => {
         >
           <Stack direction="column">
             <Typography variant="h3" color="white" sx={{ fontWeight: "400" }}>
-              The Allan Chassnoff
+              The Allan Chassanoff
             </Typography>
             <Typography
               variant="h4"
