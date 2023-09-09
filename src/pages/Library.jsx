@@ -21,6 +21,18 @@ export default function Library() {
     getData();
   }, []);
 
+  function change(str) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === "_") {
+        newStr += " ";
+      } else {
+        newStr += str[i];
+      }
+    }
+    return newStr;
+  }
+
   async function getData() {
     setLoading(true);
     try {
@@ -73,29 +85,44 @@ export default function Library() {
                     },
                   }}
                   alignItems={"center"}
-                  justifyContent={"space-between"}
+                  justifyContent={"space-between"} // This will separate the inner stack and MenuLib
                   spacing={6}
                 >
-                  <img
-                    src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
-                    style={{ width: "10%" }}
-                  />
-                  <Typography
-                    variant="h6"
-                    align="center"
-                    sx={{
-                      cursor: "pointer",
-                      "&:hover": { textDecoration: "underline" },
-                      fontSize: "0.9rem",
-                      minWidth: "50%",
-                      maxWidth: "50%",
-                      wordWrap: "break-word",
-                      whiteSpace: "normal",
-                    }}
-                    color={"#45accf"}
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    sx={{ alignItems: "start", maxWidth: "80%" }}
                   >
-                    {elem.name}
-                  </Typography>
+                    <Box
+                      sx={{
+                        width: "10%", // Make sure this is the width you want
+                        flexShrink: 0, // Prevent the image from shrinking
+                      }}
+                    >
+                      <img
+                        src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          objectFit: "contain",
+                        }}
+                      />
+                    </Box>
+                    <Typography
+                      variant="h6"
+                      align="center"
+                      sx={{
+                        cursor: "pointer",
+                        "&:hover": { textDecoration: "underline" },
+                        fontSize: "0.9rem",
+                        wordWrap: "break-word",
+                        whiteSpace: "normal",
+                      }}
+                      color={"#45accf"}
+                    >
+                      {change(elem.name)}
+                    </Typography>
+                  </Stack>
                   <MenuLib pdf={elem} />
                 </Stack>
                 <Divider

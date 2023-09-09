@@ -50,8 +50,10 @@ const MenuLib = (props) => {
   function handleModalOpen() {
     setOpenModal(true);
   }
-  function handleModalClose() {
-    setOpenModal(false);
+  function handleModalClose(event,reason) {
+    if(reason!== 'backdropClick'){
+      setOpenModal(false);
+    }
   }
 
   const handleClick = (event) => {
@@ -223,7 +225,11 @@ const MenuLib = (props) => {
               >
                 <CreateIcon sx={{ fontSize: "2em" }} /> Question
               </Button>
-              <Modal open={openModal} onClose={handleModalClose}>
+              <Modal
+                open={openModal}
+                onClose={handleModalClose}
+                disableEscapeKeyDown
+              >
                 <Box sx={style}>
                   <IconButton
                     onClick={handleModalClose}
@@ -237,6 +243,7 @@ const MenuLib = (props) => {
                     <CloseIcon />
                   </IconButton>
                   <Input namespace={name} />
+                  <Chat namespace={name} />
                 </Box>
               </Modal>
             </MenuItem>

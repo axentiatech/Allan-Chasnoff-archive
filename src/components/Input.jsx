@@ -35,14 +35,20 @@ const Input = (props) => {
   //   })
   // },[])
 
+  function handleKey(e){
+    if(e.key === "Enter"){
+      handleSubmit();
+    }
+  }
+
   const ResizeHandle = (
     <div
       style={{
         position: "absolute",
         width: 20,
         height: 20,
-        bottom: 12,
-        right: -5,
+        bottom: -18,
+        right: -3,
         padding: "2px",
         cursor: "nwse-resize",
         zIndex: 2,
@@ -93,12 +99,14 @@ const Input = (props) => {
       >
         <Stack direction={"row"} alignItems={"center"} sx={{marginTop:{
           xs:"5%",
-          lg:"2%"
-        }}}>
+          lg:"2%"},
+          overflow:"hidden",
+          }}>
           <TextField
             value={question}
             fullWidth
             type="text"
+            onKeyDownCapture={(e)=>{handleKey(e)}}
             onChange={(e) => {
               setQuestion(e.target.value);
               setError(false);
@@ -124,7 +132,6 @@ const Input = (props) => {
             overflowY: "auto",
             overflowX: "hidden",
             margin: "auto",
-            marginTop: "3%",
           }}
         >
           {chats.map((chat, idx) => {
@@ -149,12 +156,16 @@ const Input = (props) => {
                     width: "90%", // reduces the width to provide space for other elements
                   }}
                 >
-                  <strong>Answer</strong>. {chat.answer}
+                  <strong>Answer</strong>. 
+                  {chat.answer.split("\n\nsource :")[0]}
+                    <br />
+                    <em style={{fontWeight:"300"}}>
+                      Source: {chat.answer.split("\n\nsource :")[1]}
+                    </em>
                 </Typography>
               </Stack>
             );
           })}
-          <Chat namespace={name_space} />
         </Box>
       </Resizable>
     </>

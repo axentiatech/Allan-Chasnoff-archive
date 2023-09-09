@@ -71,7 +71,7 @@ export default function Chat(props) {
 
   return (
     <div >
-      <Button variant="contained"   onClick={onDownloadButtonClick}>
+      <Button variant="contained" sx={{color:"white"}}   onClick={onDownloadButtonClick}>
         Download
       </Button>
     </div>
