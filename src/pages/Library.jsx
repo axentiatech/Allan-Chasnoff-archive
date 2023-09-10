@@ -24,6 +24,31 @@ export default function Library() {
     getData();
   }, []);
 
+  function getName(name){
+    console.log(name);
+    const nameArr = name.split('-');
+    const author = nameArr.pop();
+    if(nameArr.length === 0){
+      return name.split('Author')[0];
+    }
+    else{
+      return nameArr;
+    }
+  }
+
+  function getAuthor(name){
+    console.log(name);
+    const nameArr = name.split('-');
+    const author = nameArr.pop();
+    if(nameArr.length === 0){
+      const authorName = name.split('Author')[1];
+      return "by" + authorName;
+    }
+    else{
+      return "by" + author;
+    }
+  }
+
   function change(str) {
     let newStr = "";
     for (let i = 0; i < str.length; i++) {
@@ -140,6 +165,7 @@ export default function Library() {
                             maxWidth: "8vw",
                           }}
                         />
+                        <div>
                       <Typography
                         variant="h6"
                         sx={{
@@ -151,8 +177,18 @@ export default function Library() {
                         }}
                         color={"#45accf"}
                       >
-                        {elem}
+                        {getName(elem)}
                       </Typography>
+                      <Typography
+                      variant="h6"
+                      sx={{color:"grey",fontSize:{
+                        xs:"0.6rem",
+                        lg:"0.8rem"
+                      }}}
+                      >
+                        {getAuthor(elem)}
+                      </Typography>
+                      </div>
                     </Stack>
                     <MenuLib pdf={booksArray[id]} />
                   </Stack>

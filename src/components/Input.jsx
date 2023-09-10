@@ -114,6 +114,7 @@ const Input = (props) => {
             label={error ? "Enter valid questions" : "Ask question.."}
             variant="filled"
             error={error}
+            autoComplete="off"
             disabled={loading ? true : false}
           />
           {loading ? (
@@ -139,7 +140,10 @@ const Input = (props) => {
               <Stack key={idx} sx={{ marginRight: "2%" }}>
                 <Typography
                   sx={{
-                    marginBottom: "3%",
+                    marginBottom: {
+                      xs:"3%",
+                      lg:"1%"
+                    },
                     wordWrap: "break-word", // breaks lengthy words to prevent overflow
                     overflowWrap: "break-word", // for better browser support
                     width: "90%", // reduces the width to provide space for other elements
@@ -150,7 +154,10 @@ const Input = (props) => {
                 </Typography>
                 <Typography
                   sx={{
-                    marginBottom: "3%",
+                    marginBottom: {
+                      xs:"3%",
+                      lg:"1%"
+                    },
                     wordWrap: "break-word", // breaks lengthy words to prevent overflow
                     overflowWrap: "break-word", // for better browser support
                     width: "90%", // reduces the width to provide space for other elements
