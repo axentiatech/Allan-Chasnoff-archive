@@ -8,15 +8,18 @@ import {
   Stack,
   Divider,
   CircularProgress,
+  IconButton,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import MenuLib from "../components/MenuLib";
 import axios from "axios";
+import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
 
 export default function Library() {
   const [booksArray, setBooksArray] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [search, setSearch] = useState("");
+  const [list, setList] = useState([]);
   useEffect(() => {
     getData();
   }, []);
@@ -40,6 +43,10 @@ export default function Library() {
         "https://allanarchive-backend.onrender.com/files"
       );
       const data = res.data;
+      const List = data.map((elem) => {
+        return change(elem.name);
+      });
+      setList(List);
       setBooksArray(data);
     } catch (err) {
       console.log(err);
@@ -47,6 +54,15 @@ export default function Library() {
       setLoading(false);
     }
   }
+
+  function handleChange(name){
+    setSearch(name);
+  }
+
+  const filteredItems = list.filter((item) =>
+    item.toLowerCase().includes(search.toLowerCase())
+  );
+   
 
   return (
     <Card
@@ -72,67 +88,87 @@ export default function Library() {
           }}
         />
       ) : (
-        <CardContent>
-          {booksArray.map((elem, id) => {
-            return (
-              <div key={id}>
-                <Stack
-                  direction="row"
-                  sx={{
-                    marginTop: {
-                      xs: "5%",
-                      lg: "2%",
-                    },
-                  }}
-                  alignItems={"center"}
-                  justifyContent={"space-between"} // This will separate the inner stack and MenuLib
-                  spacing={6}
-                >
+        <>
+          <Stack
+            direction={"row"}
+            alignItems={"center"}
+            sx={{ width: "80%", margin: "auto", marginTop: "2%" }}
+          >
+            <TextField
+              value={search}
+              variant="filled"
+              label="search"
+              fullWidth
+              autoComplete="off"
+              onChange={(e) => {
+                handleChange(e.target.value);
+              }}
+            />
+            <IconButton
+              onClick={() => {
+                setSearch("");
+              }}
+            >
+              <CloseRounded />
+            </IconButton>
+          </Stack>
+          <CardContent>
+            { filteredItems.length === 0 ?<Box sx={{width:"90%",margin:"auto"}} ><Typography variant="h6">Sorry, we couldn't find any results matching your search.</Typography></Box> 
+            :filteredItems.map((elem, id) => {
+              return (
+                <div key={id}>
                   <Stack
                     direction="row"
-                    spacing={2}
-                    sx={{ alignItems: "start", maxWidth: "80%" }}
+                    sx={{
+                      marginTop: {
+                        xs: "5%",
+                        lg: "2%",
+                      },
+                    }}
+                    alignItems={"center"}
+                    justifyContent={"space-between"}
+                    spacing={6}
                   >
-                    <Box
-                      sx={{
-                        width: "10%", // Make sure this is the width you want
-                        flexShrink: 0, // Prevent the image from shrinking
-                      }}
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      sx={{ alignItems:"center", maxWidth: "80%" }}
                     >
-                      <img
-                        src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                          objectFit: "contain",
+                        <img
+                          src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
+                          style={{
+                            maxWidth: "8vw",
+                          }}
+                        />
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          cursor: "pointer",
+                          "&:hover": { textDecoration: "underline" },
+                          fontSize: "0.9rem",
+                          wordWrap: "break-word",
+                          whiteSpace: "normal",
                         }}
-                      />
-                    </Box>
-                    <Typography
-                      variant="h6"
-                      align="center"
-                      sx={{
-                        cursor: "pointer",
-                        "&:hover": { textDecoration: "underline" },
-                        fontSize: "0.9rem",
-                        wordWrap: "break-word",
-                        whiteSpace: "normal",
-                      }}
-                      color={"#45accf"}
-                    >
-                      {change(elem.name)}
-                    </Typography>
+                        color={"#45accf"}
+                      >
+                        {elem}
+                      </Typography>
+                    </Stack>
+                    <MenuLib pdf={booksArray[id]} />
                   </Stack>
-                  <MenuLib pdf={elem} />
-                </Stack>
-                <Divider
-                  variant="fullWidth"
-                  sx={{ color: "#f4f4f4", borderWidth: "3px", marginTop: "2%" }}
-                />
-              </div>
-            );
-          })}
-        </CardContent>
+                  <Divider
+                    variant="fullWidth"
+                    sx={{
+                      color: "#f4f4f4",
+                      borderWidth: "3px",
+                      marginTop: "2%",
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </CardContent>
+        </>
       )}
     </Card>
   );
