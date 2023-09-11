@@ -114,7 +114,7 @@ export default function Library() {
         />
       ) : (
         <>
-          <Stack
+          {/* <Stack
             direction={"row"}
             alignItems={"center"}
             sx={{ width: "80%", margin: "auto", marginTop: "2%" }}
@@ -136,7 +136,7 @@ export default function Library() {
             >
               <CloseRounded />
             </IconButton>
-          </Stack>
+          </Stack> */}
           <CardContent>
             { filteredItems.length === 0 ?<Box sx={{width:"90%",margin:"auto"}} ><Typography variant="h6">Sorry, we couldn't find any results matching your search.</Typography></Box> 
             :filteredItems.map((elem, id) => {
