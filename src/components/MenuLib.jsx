@@ -171,7 +171,7 @@ const MenuLib = (props) => {
                 maxWidth: "100%",
               }}
             >
-              {truncate(change(name), 30)}
+              {truncate(change(name), 20)}
             </Typography>
           </MenuItem>
           <Stack direction={"row"} spacing={-2} justifyContent={"center"}>

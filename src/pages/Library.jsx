@@ -97,7 +97,7 @@ export default function Library() {
         },
         maxHeight: "80vh",
         overflowY: "auto",
-        minHeight: "60vh",
+        minHeight: "40vh",
         position: "relative",
       }}
     >
@@ -145,8 +145,8 @@ export default function Library() {
                     direction="row"
                     sx={{
                       marginTop: {
-                        xs: "5%",
-                        lg: "2%",
+                        xs: "2%",
+                        lg: "1%",
                       },
                     }}
                     alignItems={"center"}
@@ -159,9 +159,13 @@ export default function Library() {
                       sx={{ alignItems:"center", maxWidth: "80%" }}
                     >
                         <img
-                          src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg"
+                          src={"https://allanarchive-backend.onrender.com/images/"+(id+1)+".jpg"}
                           style={{
-                            maxWidth: "8vw",
+                            width:{
+                              xs:"8vw",
+                              lg:"5vw"
+                            },
+                            maxWidth: "6vw",
                           }}
                         />
                         <div>
@@ -196,7 +200,7 @@ export default function Library() {
                     sx={{
                       color: "#f4f4f4",
                       borderWidth: "3px",
-                      marginTop: "2%",
+                      marginTop: "1%",
                     }}
                   />
                 </div>
