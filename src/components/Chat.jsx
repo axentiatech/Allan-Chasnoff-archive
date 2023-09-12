@@ -8,6 +8,7 @@ import {
   pdf,
 } from "@react-pdf/renderer";
 import { Button } from "@mui/material";
+import { useState } from "react";
 
 
 const styles = StyleSheet.create({
@@ -36,20 +37,10 @@ const MyDocument = ({ data }) => (
 
 export default function Chat(props) {
   // const [data, setData] = useState(null);
-
+  const chats = props.chats;
   const onDownloadButtonClick = () => {
-    axios
-      .get(`https://gpt6-backend.onrender.com/chat-history`, {
-        params: {
-          name_space: props.namespace,
-        },
-      })
-      .then((response) => {
-        const data = response.data.data;
-        console.log(data);
-        // setData(data);
-        if (data) {
-          const asPdf = pdf(<MyDocument data={data} />);
+    if(chats){
+      const asPdf = pdf(<MyDocument data={chats} />);
           asPdf.toBlob().then((blob) => {
             console.log("Blob:", blob); // debugging line
             const url = URL.createObjectURL(blob);
@@ -59,14 +50,9 @@ export default function Chat(props) {
             link.click();
             URL.revokeObjectURL(url);
           });
-        }
-      })
-      .catch((error) => {
-        console.error(
-          "An error occurred while fetching the chat history",
-          error
-        );
-      });
+    }
+
+
   };
 
   return (

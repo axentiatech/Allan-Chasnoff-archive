@@ -25,7 +25,6 @@ export default function Library() {
   }, []);
 
   function getName(name){
-    console.log(name);
     const nameArr = name.split('-');
     const author = nameArr.pop();
     if(nameArr.length === 0){
@@ -37,7 +36,7 @@ export default function Library() {
   }
 
   function getAuthor(name){
-    console.log(name);
+
     const nameArr = name.split('-');
     const author = nameArr.pop();
     if(nameArr.length === 0){

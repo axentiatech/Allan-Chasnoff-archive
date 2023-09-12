@@ -17,9 +17,9 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 const Input = (props) => {
   const name_space = props.namespace;
+  const {chats, setChats} = props;
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState(null);
-  const [chats, setChats] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   // useEffect(()=>{
@@ -89,7 +89,7 @@ const Input = (props) => {
     <>
       <Resizable
         defaultSize={{
-          width: window.innerWidth * 0.8,
+          width: window.innerWidth * 0.7,
           height: window.innerHeight * 0.6,
         }}
         style={{ margin: "auto" }}
@@ -100,7 +100,7 @@ const Input = (props) => {
         <Stack direction={"row"} alignItems={"center"} sx={{marginTop:{
           xs:"5%",
           lg:"2%"},
-          overflow:"hidden",
+          overflow:"hidden"
           }}>
           <TextField
             value={question}

@@ -23,6 +23,19 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const MenuLib = (props) => {
   const [progress, setProgress] = useState(0);
+  const [chats, setChats] = useState([]);
+
+  function change(str) {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === "_") {
+        newStr += " ";
+      } else {
+        newStr += str[i];
+      }
+    }
+    return newStr;
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -53,6 +66,7 @@ const MenuLib = (props) => {
   function handleModalClose(event,reason) {
     if(reason!== 'backdropClick'){
       setOpenModal(false);
+      setChats([]);
     }
   }
 
@@ -157,10 +171,10 @@ const MenuLib = (props) => {
                 maxWidth: "100%",
               }}
             >
-              {truncate(name, 30)}
+              {truncate(change(name), 30)}
             </Typography>
           </MenuItem>
-          <Stack direction={"row"} spacing={-2}>
+          <Stack direction={"row"} spacing={-2} justifyContent={"center"}>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
               <Button
                 onClick={() => {
@@ -181,30 +195,6 @@ const MenuLib = (props) => {
                 variant="contained"
               >
                 <ShareIcon sx={{ fontSize: "2em" }} /> Open
-              </Button>
-            </MenuItem>
-            <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
-              <Button
-                disabled
-                onClick={() => {
-                  setBar(true);
-                  setProgress(0);
-                }}
-                sx={{
-                  backgroundColor: "#5c9cc8",
-                  color: "white",
-                  "&:hover": {
-                    backgroundColor: "#5c9ff9",
-                  },
-                  fontSize: {
-                    xs: "0.5rem",
-                    lg: "0.7rem",
-                  },
-                }}
-                variant="contained"
-              >
-                {" "}
-                <SaveIcon sx={{ fontSize: "2em" }} /> Ingested
               </Button>
             </MenuItem>
             <MenuItem sx={{ "&:hover": { backgroundColor: "transparent" } }}>
@@ -243,8 +233,8 @@ const MenuLib = (props) => {
                   >
                     <CloseIcon />
                   </IconButton>
-                  <Input namespace={name} />
-                  <Chat namespace={name} />
+                  <Input namespace={name} setChats={setChats} chats={chats}/>
+                  <Chat namespace={name} chats={chats}  />
                 </Box>
               </Modal>
             </MenuItem>
