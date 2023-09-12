@@ -53,7 +53,7 @@ const Navbar = () => {
         >
           <Stack direction="column">
             <Typography variant="h3" color="white" sx={{ fontWeight: "400" }}>
-              The Allan Chassanoff
+              The Allan Chasanoff
             </Typography>
             <Typography
               variant="h4"
@@ -113,7 +113,7 @@ const Navbar = () => {
             <MenuItem>
               <Avatar />{" "}
               <Typography variant="h6" color="white">
-                Allan Chassanoff
+                Allan Chasanoff
               </Typography>
             </MenuItem>
             <MenuItem

@@ -34,7 +34,7 @@ export default function Home() {
         </Typography>
         <Typography variant="h6" color="white" align="center">
           A site dedicated to the work done as a{" "}
-          <span style={{ color: "red" }}>user</span> by Allan Chassanoff in the{" "}
+          <span style={{ color: "red" }}>user</span> by Allan Chasanoff in the{" "}
           <span style={{ color: "skyblue" }}>Read and Note</span> Platform
         </Typography>
         <Stack direction="row" alignItems={"center"} justifyContent={"center"}>
