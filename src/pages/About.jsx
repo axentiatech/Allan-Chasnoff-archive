@@ -6,7 +6,7 @@ function About() {
       <Box
         sx={{
           width:{
-            sm:"80%",
+            xs:"80%",
             lg:"60%",
           },
           maxHeight:"70vh",

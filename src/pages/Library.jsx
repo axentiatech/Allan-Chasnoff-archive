@@ -20,32 +20,42 @@ export default function Library() {
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [list, setList] = useState([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     getData();
   }, []);
 
-  function getName(name){
-    const nameArr = name.split('-');
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
+  function getName(name) {
+    const nameArr = name.split("-");
     const author = nameArr.pop();
-    let final = '';
-    if(nameArr.length === 0){
-      final = name.split('Author')[0];
-    }
-    else{
+    let final = "";
+    if (nameArr.length === 0) {
+      final = name.split("Author")[0];
+    } else {
       final = nameArr;
     }
-    return(final.toString().split('book')[1])
+    return final.toString().split("book")[1];
   }
 
-  function getAuthor(name){
-
-    const nameArr = name.split('-');
+  function getAuthor(name) {
+    const nameArr = name.split("-");
     const author = nameArr.pop();
-    if(nameArr.length === 0){
-      const authorName = name.split('Author')[1];
+    if (nameArr.length === 0) {
+      const authorName = name.split("Author")[1];
       return "by" + authorName;
-    }
-    else{
+    } else {
       return "by" + author;
     }
   }
@@ -81,22 +91,18 @@ export default function Library() {
     }
   }
 
-  function handleChange(name){
+  function handleChange(name) {
     setSearch(name);
   }
 
   const filteredItems = list.filter((item) =>
     item.toLowerCase().includes(search.toLowerCase())
   );
-   
 
   return (
     <Card
       sx={{
-        marginTop: {
-          xs: "10%",
-          lg: "2%",
-        },
+        marginTop: windowWidth < 900 ? "10%" : "2%",
         maxHeight: "80vh",
         overflowY: "auto",
         minHeight: "30vh",
@@ -139,81 +145,85 @@ export default function Library() {
             </IconButton>
           </Stack> */}
           <CardContent>
-            { filteredItems.length === 0 ?<Box sx={{width:"90%",margin:"auto"}} ><Typography variant="h6">Sorry, we couldn't find any results matching your search.</Typography></Box> 
-            :filteredItems.map((elem, id) => {
-              return (
-                <div key={id}>
-                  <Stack
-                    direction="row"
-                    sx={{
-                      marginTop: {
-                        xs: "1%",
-                        lg: "0.5%",
-                      },
-                    }}
-                    alignItems={"center"}
-                    justifyContent={"space-between"}
-                    spacing={6}
-                  >
+            {filteredItems.length === 0 ? (
+              <Box sx={{ width: "90%", margin: "auto" }}>
+                <Typography variant="h6">
+                  Sorry, we couldn't find any results matching your search.
+                </Typography>
+              </Box>
+            ) : (
+              filteredItems.map((elem, id) => {
+                return (
+                  <div key={id}>
                     <Stack
                       direction="row"
-                      spacing={1}
-                      sx={{ alignItems:"center", maxWidth: "80%" }}
+                      sx={{
+                        marginTop: {
+                          xs: "1%",
+                          lg: "0.5%",
+                        },
+                      }}
+                      alignItems={"center"}
+                      justifyContent={"space-between"}
+                      spacing={6}
                     >
+                      <Stack
+                        direction="row"
+                        spacing={1}
+                        sx={{ alignItems: "center", maxWidth: "80%" }}
+                      >
                         <img
-                          src={"https://allanarchive-backend.onrender.com/images/"+(id+1)+".jpg"}
+                          src={
+                            "https://allanarchive-backend.onrender.com/images/" +
+                            (id + 1) +
+                            ".jpg"
+                          }
                           style={{
-                            width:{
-                              xs:"6vw",
-                              lg:"2vw"
-                            },
-                            maxWidth:"4vw"
+                            width: windowWidth < 900 ? "8vw" : "4vw",
                           }}
                         />
                         <div>
-                      <Typography
-                        variant="h6"
-                        // style={{
-                        //   fontSize:"0.8rem"
-                        // }}
-                        sx={{
-                          cursor: "pointer",
-                          "&:hover": { textDecoration: "underline" },
-                          fontSize: {
-                            xs:"0.8rem !important",
-                            lg:"1rem !important"
-                          },
-                          wordWrap: "break-word",
-                          whiteSpace: "normal",
-                        }}
-                        color={"#45accf"}
-                      >
-                        {getName(elem)}
-                      </Typography>
-                      <Typography
-                      variant="h6"
-                      sx={{color:"grey",fontSize:{
-                        xs:"0.5rem",
-                        lg:"0.7rem"
-                      }}}
-                      >
-                        {getAuthor(elem)}
-                      </Typography>
-                      </div>
+                          <Typography
+                            variant="h6"
+                            // style={{
+                            //   fontSize:"0.8rem"
+                            // }}
+                            sx={{
+                              cursor: "pointer",
+                              "&:hover": { textDecoration: "underline" },
+                              fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
+                              wordWrap: "break-word",
+                              whiteSpace: "normal",
+                            }}
+                            color={"#45accf"}
+                          >
+                            {getName(elem)}
+                          </Typography>
+                          <Typography
+                            variant="h6"
+                            sx={{
+                              color: "grey",
+                              fontSize: windowWidth < 900 ? "0.5rem !important" : "0.7rem !important",
+                            }}
+                          >
+                            {getAuthor(elem)}
+                          </Typography>
+                        </div>
+                      </Stack>
+                      <MenuLib pdf={booksArray[id]} />
                     </Stack>
-                    <MenuLib pdf={booksArray[id]} />
-                  </Stack>
-                  <Divider
-                    variant="fullWidth"
-                    sx={{
-                      color: "#f4f4f4",
-                      borderWidth: "3px",
-                      marginTop: "0.5%",
-                    }}
-                  />
-                </div>
-              );
-            })}
+                    <Divider
+                      variant="fullWidth"
+                      sx={{
+                        color: "#f4f4f4",
+                        borderWidth: "3px",
+                        marginTop: "0.5%",
+                      }}
+                    />
+                  </div>
+                );
+              })
+            )}
           </CardContent>
         </>
       )}

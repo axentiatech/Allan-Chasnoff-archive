@@ -162,7 +162,7 @@ const Input = (props) => {
             <CircularProgress size={30} color="inherit" />
           ) : (
             <IconButton onClick={handleSubmit}>
-              <SendIcon />
+              <SendIcon sx={{color:"black"}} />
             </IconButton>
           )}
         </Stack>

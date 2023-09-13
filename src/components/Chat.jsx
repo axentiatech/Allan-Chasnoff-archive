@@ -7,9 +7,9 @@ import {
   StyleSheet,
   pdf,
 } from "@react-pdf/renderer";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import { useState } from "react";
-
+import DownloadIcon from '@mui/icons-material/Download';
 
 const styles = StyleSheet.create({
   page: {
@@ -57,9 +57,9 @@ export default function Chat(props) {
 
   return (
     <div >
-      <Button variant="contained" sx={{color:"white"}}   onClick={onDownloadButtonClick}>
-        Download
-      </Button>
+      <IconButton  onClick={onDownloadButtonClick} >
+        <DownloadIcon sx={{color:"black"}} />
+      </IconButton>
     </div>
   );
 }
