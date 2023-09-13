@@ -97,7 +97,7 @@ export default function Library() {
         },
         maxHeight: "80vh",
         overflowY: "auto",
-        minHeight: "40vh",
+        minHeight: "30vh",
         position: "relative",
       }}
     >
@@ -145,8 +145,8 @@ export default function Library() {
                     direction="row"
                     sx={{
                       marginTop: {
-                        xs: "2%",
-                        lg: "1%",
+                        xs: "1%",
+                        lg: "0.5%",
                       },
                     }}
                     alignItems={"center"}
@@ -162,19 +162,25 @@ export default function Library() {
                           src={"https://allanarchive-backend.onrender.com/images/"+(id+1)+".jpg"}
                           style={{
                             width:{
-                              xs:"8vw",
-                              lg:"5vw"
+                              xs:"6vw",
+                              lg:"2vw"
                             },
-                            maxWidth: "6vw",
+                            maxWidth:"4vw"
                           }}
                         />
                         <div>
                       <Typography
                         variant="h6"
+                        // style={{
+                        //   fontSize:"0.8rem"
+                        // }}
                         sx={{
                           cursor: "pointer",
                           "&:hover": { textDecoration: "underline" },
-                          fontSize: "0.9rem",
+                          fontSize: {
+                            xs:"0.8rem !important",
+                            lg:"1rem !important"
+                          },
                           wordWrap: "break-word",
                           whiteSpace: "normal",
                         }}
@@ -185,8 +191,8 @@ export default function Library() {
                       <Typography
                       variant="h6"
                       sx={{color:"grey",fontSize:{
-                        xs:"0.6rem",
-                        lg:"0.8rem"
+                        xs:"0.5rem",
+                        lg:"0.7rem"
                       }}}
                       >
                         {getAuthor(elem)}
@@ -200,7 +206,7 @@ export default function Library() {
                     sx={{
                       color: "#f4f4f4",
                       borderWidth: "3px",
-                      marginTop: "1%",
+                      marginTop: "0.5%",
                     }}
                   />
                 </div>

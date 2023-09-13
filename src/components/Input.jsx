@@ -60,6 +60,13 @@ const Input = (props) => {
     }
   }
 
+  let style = {
+    width: dimensions.width,
+    height: dimensions.height,
+    justifyContent: "center",
+    margin: "auto",
+  };
+
   const ResizeHandle = (
     <div
       style={{
@@ -107,11 +114,21 @@ const Input = (props) => {
   return (
     <>
       <Resizable
-        defaultSize={dimensions}
-        style={{ margin: "auto" }}
-        handleComponent={{
-          bottomRight: ResizeHandle,
+        style={style}
+        size={dimensions}
+        handleComponent={{ bottomRight: ResizeHandle }} // Use your defined ResizeHandle
+        enable={{
+          top: false,
+          left: false,
+          right: true,
+          bottom: true,
+          bottomRight: true,
         }}
+        onResizeStop={(e, direction, ref) => {
+          setDimensions({ width: ref.style.width, height: ref.style.height });
+        }}
+        max-width={MAX_WIDTH}
+        max-height={MAX_HEIGHT}
       >
         <Stack
           direction={"row"}
