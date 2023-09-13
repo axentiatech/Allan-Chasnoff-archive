@@ -42,7 +42,7 @@ const Input = (props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   // useEffect(()=>{
-  //   axios.get("https://gpt6-backend.onrender.com/chat-history?name_space=dev_resume&is_download=true",{
+  //   axios.get("https://allan-backend.onrender.com/chat-history?name_space=dev_resume&is_download=true",{
   //     params:{
   //       name_space: name_space,
   //       is_download: true
@@ -93,8 +93,7 @@ const Input = (props) => {
       return;
     }
     setLoading(true);
-    axios
-      .post("https://gpt6-backend.onrender.com/respond", {
+    axios.post("https://allan-backend.onrender.com/respond", {
         input_text: question,
         name_space: name_space,
       })
@@ -168,12 +167,13 @@ const Input = (props) => {
         </Stack>
         <Box
           sx={{
-            maxHeight: "50vh",
+            maxHeight: "40vh",
             minHeight: "20vh",
             maxWidth: "100%",
             overflowY: "auto",
             overflowX: "hidden",
             margin: "auto",
+            marginTop:"0.5%"
           }}
         >
           {chats.map((chat, idx) => {

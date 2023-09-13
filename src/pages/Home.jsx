@@ -10,7 +10,7 @@ export default function Home() {
         console.log(err);
       })
 
-      axios.get("https://gpt6-backend.onrender.com/").then((res)=>{
+      axios.get("https://allan-backend.onrender.com/").then((res)=>{
         console.log(res.data);
       }).catch((err)=>{
         console.log(err);
