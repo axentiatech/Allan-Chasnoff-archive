@@ -34,7 +34,7 @@ const MenuLib = (props) => {
         newStr += str[i];
       }
     }
-    return newStr;
+    return(newStr.split('book')[1].toString());
   }
 
   useEffect(() => {
