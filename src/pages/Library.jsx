@@ -27,12 +27,14 @@ export default function Library() {
   function getName(name){
     const nameArr = name.split('-');
     const author = nameArr.pop();
+    let final = '';
     if(nameArr.length === 0){
-      return name.split('Author')[0];
+      final = name.split('Author')[0];
     }
     else{
-      return nameArr;
+      final = nameArr;
     }
+    return(final.toString().split('book')[1])
   }
 
   function getAuthor(name){
