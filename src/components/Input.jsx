@@ -17,11 +17,30 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 const Input = (props) => {
   const name_space = props.namespace;
-  const {chats, setChats} = props;
+  const { chats, setChats } = props;
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const MAX_WIDTH = 600; // You can adjust these values to your requirements
+  const MAX_HEIGHT = 500;
+  const [dimensions, setDimensions] = useState({
+    height: Math.min(window.innerHeight * 0.5, MAX_HEIGHT),
+    width: Math.min(window.innerWidth * 0.6, MAX_WIDTH),
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        height: Math.min(window.innerHeight * 0.5, MAX_HEIGHT),
+        width: Math.min(window.innerWidth * 0.7, MAX_WIDTH),
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // useEffect(()=>{
   //   axios.get("https://gpt6-backend.onrender.com/chat-history?name_space=dev_resume&is_download=true",{
   //     params:{
@@ -35,8 +54,8 @@ const Input = (props) => {
   //   })
   // },[])
 
-  function handleKey(e){
-    if(e.key === "Enter"){
+  function handleKey(e) {
+    if (e.key === "Enter") {
       handleSubmit();
     }
   }
@@ -75,38 +94,43 @@ const Input = (props) => {
       .then((res) => {
         const fetchedanswer = res.data.message.answer;
         setAnswer(res.data.message.answer);
-        setChats([{ question: question, answer: fetchedanswer } , ...chats]);
+        setChats([{ question: question, answer: fetchedanswer }, ...chats]);
         setLoading(false);
-        setQuestion('');
+        setQuestion("");
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
-        setQuestion('');
+        setQuestion("");
       });
   }
   return (
     <>
       <Resizable
-        defaultSize={{
-          width: window.innerWidth * 0.7,
-          height: window.innerHeight * 0.6,
-        }}
+        defaultSize={dimensions}
         style={{ margin: "auto" }}
         handleComponent={{
           bottomRight: ResizeHandle,
         }}
       >
-        <Stack direction={"row"} alignItems={"center"} sx={{marginTop:{
-          xs:"5%",
-          lg:"2%"},
-          overflow:"hidden"
-          }}>
+        <Stack
+          direction={"row"}
+          alignItems={"center"}
+          sx={{
+            marginTop: {
+              xs: "5%",
+              lg: "2%",
+            },
+            overflow: "hidden",
+          }}
+        >
           <TextField
             value={question}
             fullWidth
             type="text"
-            onKeyDownCapture={(e)=>{handleKey(e)}}
+            onKeyDownCapture={(e) => {
+              handleKey(e);
+            }}
             onChange={(e) => {
               setQuestion(e.target.value);
               setError(false);
@@ -141,8 +165,8 @@ const Input = (props) => {
                 <Typography
                   sx={{
                     marginBottom: {
-                      xs:"3%",
-                      lg:"1%"
+                      xs: "3%",
+                      lg: "1%",
                     },
                     wordWrap: "break-word", // breaks lengthy words to prevent overflow
                     overflowWrap: "break-word", // for better browser support
@@ -155,20 +179,19 @@ const Input = (props) => {
                 <Typography
                   sx={{
                     marginBottom: {
-                      xs:"3%",
-                      lg:"1%"
+                      xs: "3%",
+                      lg: "1%",
                     },
                     wordWrap: "break-word", // breaks lengthy words to prevent overflow
                     overflowWrap: "break-word", // for better browser support
                     width: "90%", // reduces the width to provide space for other elements
                   }}
                 >
-                  <strong>Answer</strong>. 
-                  {chat.answer.split("\n\nsource :")[0]}
-                    <br />
-                    <em style={{fontWeight:"300"}}>
-                      Source: {chat.answer.split("\n\nsource :")[1]}
-                    </em>
+                  <strong>Answer</strong>.{chat.answer.split("\n\nsource :")[0]}
+                  <br />
+                  <em style={{ fontWeight: "300" }}>
+                    Source: {chat.answer.split("\n\nsource :")[1]}
+                  </em>
                 </Typography>
               </Stack>
             );
