@@ -15,6 +15,7 @@ import { Resizable } from "re-resizable";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import DownloadIcon from "@mui/icons-material/Download";
 
+
 const Input = (props) => {
   const name_space = props.namespace;
   const { chats, setChats } = props;
@@ -24,7 +25,6 @@ const Input = (props) => {
   const [error, setError] = useState(false);
   const MAX_WIDTH = 600; // You can adjust these values to your requirements
   const MAX_HEIGHT = 500;
-  
   const [dimensions, setDimensions] = useState({
     height: Math.min(window.innerHeight * 0.5, MAX_HEIGHT),
     width: Math.min(window.innerWidth * 0.6, MAX_WIDTH),
