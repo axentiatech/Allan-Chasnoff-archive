@@ -37,10 +37,10 @@ const MyDocument = ({ data }) => (
 
 export default function Chat(props) {
   // const [data, setData] = useState(null);
-  const chats = props.chats;
+  let chats = props.chats;
   const onDownloadButtonClick = () => {
     if(chats){
-      const asPdf = pdf(<MyDocument data={chats} />);
+      const asPdf = pdf(<MyDocument data={[...chats].reverse()} />);
           asPdf.toBlob().then((blob) => {
             console.log("Blob:", blob); // debugging line
             const url = URL.createObjectURL(blob);
