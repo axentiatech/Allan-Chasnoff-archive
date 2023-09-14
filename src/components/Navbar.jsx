@@ -138,7 +138,7 @@ const Navbar = () => {
               <AutoStoriesIcon sx={{ color: "white" }} />{" "}
               <Typography sx={{ marginLeft: "10%" }} color={"white"}>Library</Typography>
             </MenuItem>
-            {<MenuItem
+            {/*<MenuItem
               onClick={() => {
                 handleClose();
                 navigate("/words");
@@ -148,7 +148,7 @@ const Navbar = () => {
               <WorkIcon sx={{ color: "white" }} />{" "}
               <Typography color={"white"} sx={{ marginLeft: "10%" }}>Words</Typography>
             </MenuItem>
-            /* 
+             
             <MenuItem
               onClick={() => {
                 handleClose();
