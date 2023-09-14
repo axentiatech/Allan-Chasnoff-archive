@@ -58,6 +58,9 @@ const Input = (props) => {
     if (e.key === "Enter") {
       handleSubmit();
     }
+    else{
+      return;
+    }
   }
 
   let style = {
@@ -144,6 +147,9 @@ const Input = (props) => {
             value={question}
             fullWidth
             type="text"
+            onKeyDown={(e)=>{
+              e.stopPropagation();
+            }}
             onKeyDownCapture={(e) => {
               handleKey(e);
             }}

@@ -19,8 +19,8 @@ export default function Home() {
 
   return (
     <>
-      {
-        /* <Stack
+      {/* {
+        <Stack
         direction="column"
         spacing={3}
         alignItems="center"
@@ -58,7 +58,7 @@ export default function Home() {
           any questions regarding this site should be address to
           info@readandnote.com
         </Typography>
-      </Stack> */}
+      </Stack> } */}
     </>
   );
 }
