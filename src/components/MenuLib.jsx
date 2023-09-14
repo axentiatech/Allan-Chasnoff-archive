@@ -234,7 +234,7 @@ const MenuLib = (props) => {
                     <CloseIcon />
                   </IconButton>
                   <Input namespace={name} setChats={setChats} chats={chats}/>
-                  <Chat namespace={name} chats={chats.reverse()}  />
+                  <Chat namespace={name} chats={chats}  />
                 </Box>
               </Modal>
             </MenuItem>
