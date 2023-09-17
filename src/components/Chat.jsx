@@ -57,7 +57,7 @@ export default function Chat(props) {
 
   return (
     <div >
-      <IconButton  onClick={onDownloadButtonClick} >
+      <IconButton  onClick={onDownloadButtonClick} sx={{marginTop:"2%"}} >
         <DownloadIcon sx={{color:"black"}} />
       </IconButton>
     </div>

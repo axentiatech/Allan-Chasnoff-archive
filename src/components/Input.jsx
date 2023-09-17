@@ -174,7 +174,7 @@ const Input = (props) => {
         </Stack>
         <Box
           sx={{
-            maxHeight: "40vh",
+            maxHeight: "90%",
             minHeight: "20vh",
             maxWidth: "100%",
             overflowY: "auto",
@@ -194,7 +194,8 @@ const Input = (props) => {
                     },
                     wordWrap: "break-word", // breaks lengthy words to prevent overflow
                     overflowWrap: "break-word", // for better browser support
-                    width: "90%", // reduces the width to provide space for other elements
+                    width: "90%",
+                     // reduces the width to provide space for other elements
                   }}
                 >
                   <strong>Question</strong>.<br />
