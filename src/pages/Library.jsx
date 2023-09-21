@@ -120,7 +120,7 @@ export default function Library() {
         />
       ) : (
         <>
-          {/* Search Feature 
+          {/* Search Feature */}
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -143,7 +143,7 @@ export default function Library() {
             >
               <CloseRounded />
             </IconButton>
-          </Stack> */}
+          </Stack>
           <CardContent>
             {filteredItems.length === 0 ? (
               <Box sx={{ width: "90%", margin: "auto" }}>
