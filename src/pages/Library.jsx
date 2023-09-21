@@ -1,25 +1,29 @@
-import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
 import {
-  Box,
   Card,
   CardContent,
   CardHeader,
-  CircularProgress,
-  Divider,
-  IconButton,
-  Stack,
   TextField,
   Typography,
+  Box,
+  Stack,
+  Divider,
+  CircularProgress,
+  IconButton,
 } from "@mui/material";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import MenuLib from "../components/MenuLib";
+import axios from "axios";
+import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
+
+import { booksData } from "../utils/data";
 
 export default function Library() {
   const [booksArray, setBooksArray] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [list, setList] = useState([]);
+
+  const [books, setBooks] = useState(booksData);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     getData();
@@ -94,9 +98,24 @@ export default function Library() {
     setSearch(name);
   }
 
-  const filteredItems = list.filter((item) =>
-    item.toLowerCase().includes(search.toLowerCase())
-  );
+  useEffect(() => {
+    const iteratedData = [];
+    booksData.forEach((item) => {
+      if (
+        item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.author.toLowerCase().includes(search.toLowerCase())
+      ) {
+        iteratedData.push(item);
+      } else {
+        null;
+      }
+      setBooks(iteratedData);
+    });
+  }, [search]);
+
+  // const filteredItems = list.filter((item) =>
+  //   item.toLowerCase().includes(search.toLowerCase())
+  // );
 
   return (
     <Card
@@ -139,94 +158,96 @@ export default function Library() {
             <IconButton
               onClick={() => {
                 setSearch("");
+                setBooks(booksData);
               }}
             >
               <CloseRounded />
             </IconButton>
           </Stack>
-          <CardContent>
-            {filteredItems.length === 0 ? (
+          {/* filteredItems.length === 0 ? (
               <Box sx={{ width: "90%", margin: "auto" }}>
                 <Typography variant="h6">
                   Sorry, we couldn't find any results matching your search.
                 </Typography>
               </Box>
-            ) : (
-              filteredItems.map((elem, id) => {
-                return (
-                  <div key={id}>
+            )  */}
+          <CardContent>
+            {books.map((data, id) => {
+              return (
+                <div key={id}>
+                  <Stack
+                    direction="row"
+                    sx={{
+                      marginTop: {
+                        xs: "1%",
+                        lg: "0.5%",
+                      },
+                    }}
+                    alignItems={"center"}
+                    justifyContent={"space-between"}
+                    spacing={6}
+                  >
                     <Stack
                       direction="row"
-                      sx={{
-                        marginTop: {
-                          xs: "1%",
-                          lg: "0.5%",
-                        },
-                      }}
-                      alignItems={"center"}
-                      justifyContent={"space-between"}
-                      spacing={6}
+                      spacing={1}
+                      sx={{ alignItems: "center", maxWidth: "80%" }}
                     >
-                      <Stack
-                        direction="row"
-                        spacing={1}
-                        sx={{ alignItems: "center", maxWidth: "80%" }}
-                      >
-                        <img
-                          src={
-                            "https://allanarchive-backend.onrender.com/images/" +
-                            (id + 1) +
-                            ".jpg"
-                          }
-                          style={{
-                            width: windowWidth < 900 ? "8vw" : "4vw",
+                      <img
+                        src={"/thumbnails/" + (id + 1) + ".png"}
+                        style={{
+                          width: windowWidth < 900 ? "8vw" : "4vw",
+                        }}
+                      />
+                      <div>
+                        <Typography
+                          variant="h6"
+                          sx={{
+                            cursor: "pointer",
+                            "&:hover": { textDecoration: "underline" },
+                            fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
+                            wordWrap: "break-word",
+                            whiteSpace: "normal",
                           }}
-                        />
-                        <div>
-                          <Typography
-                            variant="h6"
-                            // style={{
-                            //   fontSize:"0.8rem"
-                            // }}
-                            sx={{
-                              cursor: "pointer",
-                              "&:hover": { textDecoration: "underline" },
-                              fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
-                              wordWrap: "break-word",
-                              whiteSpace: "normal",
-                            }}
-                            color={"#45accf"}
-                          >
-                            {getName(elem)}
-                          </Typography>
-                          <Typography
-                            variant="h6"
-                            sx={{
-                              color: "grey",
-                              fontSize:
-                                windowWidth < 900
-                                  ? "0.5rem !important"
-                                  : "0.7rem !important",
-                            }}
-                          >
-                            {getAuthor(elem)}
-                          </Typography>
-                        </div>
-                      </Stack>
-                      <MenuLib pdf={booksArray[id]} />
+                          onClick={() =>
+                            window.open(
+                              window.location.origin +
+                                "/books/" +
+                                (id + 1) +
+                                ".pdf",
+                              "_blank"
+                            )
+                          }
+                          color={"#45accf"}
+                        >
+                          {data.name}
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          sx={{
+                            color: "grey",
+                            fontSize:
+                              windowWidth < 900
+                                ? "0.5rem !important"
+                                : "0.7rem !important",
+                          }}
+                        >
+                          {data.author}
+                        </Typography>
+                      </div>
                     </Stack>
-                    <Divider
-                      variant="fullWidth"
-                      sx={{
-                        color: "#f4f4f4",
-                        borderWidth: "3px",
-                        marginTop: "0.5%",
-                      }}
-                    />
-                  </div>
-                );
-              })
-            )}
+                    {/* <MenuLib pdf={id + 1} /> */}
+                  </Stack>
+                  <Divider
+                    variant="fullWidth"
+                    sx={{
+                      color: "#f4f4f4",
+                      borderWidth: "3px",
+                      marginTop: "0.5%",
+                    }}
+                  />
+                </div>
+              );
+            })}
           </CardContent>
         </>
       )}
