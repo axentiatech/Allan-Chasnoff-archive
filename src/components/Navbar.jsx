@@ -11,7 +11,7 @@ import {
   MenuItem,
   Avatar,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -19,6 +19,7 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import WorkIcon from "@mui/icons-material/Work";
 import { ContactMail, LaptopMac, Person } from "@mui/icons-material";
 import { useNavigate } from "react-router";
+
 const Navbar = () => {
   const linearGradientStyle = {
     background: "linear-gradient(#4670c2 30%,  #00afd4 90%)",
@@ -43,6 +44,19 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
+
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        const ismobile = window.innerWidth < 900;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+      },
+      false
+    );
+  }, [isMobile]);
+
   return (
     <>
       <Container sx={{ marginTop: "1%" }}>
@@ -63,10 +77,80 @@ const Navbar = () => {
               Read and Note Archive
             </Typography>
           </Stack>
+          <Stack
+            direction="row"
+            alignItems="center"
+            justifyContent="space-between"
+            gap="1rem"
+            style={{ display: isMobile ? "none" : "flex" }}
+          >
+            <MenuItem
+            // sx={{
+            //   display: {
+            //     sm: "none",
+            //     xs: "none",
+            //     md: "flex",
+            //   },
+            // }}
+            >
+              <Avatar />{" "}
+              <Typography
+                variant="h6"
+                color="white"
+                style={{ marginLeft: "1rem" }}
+              >
+                Allan Chasanoff
+              </Typography>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                borderBottom: "1px solid rgba(255,255,255,0.5)",
+                // display: {
+                //   xs: "none",
+                //   md: "flex",
+                // },
+              }}
+              onClick={() => {
+                handleClose();
+                navigate("/");
+              }}
+            >
+              <HomeIcon sx={{ color: "white" }} />{" "}
+              <Typography sx={{ marginLeft: "10%" }} color={"white"}>
+                Home
+              </Typography>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/library");
+              }}
+              sx={{
+                borderBottom: "1px solid rgba(255,255,255,0.5)",
+                // display: {
+                //   xs: "none",
+                //   md: "flex",
+                // },
+              }}
+            >
+              <AutoStoriesIcon sx={{ color: "white" }} />{" "}
+              <Typography sx={{ marginLeft: "10%" }} color={"white"}>
+                Library
+              </Typography>
+            </MenuItem>
+          </Stack>
+
           <MenuIcon
             id="drop-button"
             fontSize="large"
-            sx={{ color: "#409aba", cursor: "pointer" }}
+            sx={{
+              color: "#409aba",
+              cursor: "pointer",
+              display: {
+                sm: "block",
+                md: "none",
+              },
+            }}
             onClick={handleClick}
             aria-controls={open ? "drop-menu" : undefined}
             aria-haspopup="true"
@@ -136,8 +220,11 @@ const Navbar = () => {
               sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
             >
               <AutoStoriesIcon sx={{ color: "white" }} />{" "}
-              <Typography sx={{ marginLeft: "10%" }} color={"white"}>Library</Typography>
+              <Typography sx={{ marginLeft: "10%" }} color={"white"}>
+                Library
+              </Typography>
             </MenuItem>
+
             {/*<MenuItem
               onClick={() => {
                 handleClose();
