@@ -1,19 +1,19 @@
+import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
 import {
+  Box,
   Card,
   CardContent,
   CardHeader,
+  CircularProgress,
+  Divider,
+  IconButton,
+  Stack,
   TextField,
   Typography,
-  Box,
-  Stack,
-  Divider,
-  CircularProgress,
-  IconButton,
 } from "@mui/material";
+import axios from "axios";
 import { useEffect, useState } from "react";
 import MenuLib from "../components/MenuLib";
-import axios from "axios";
-import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
 
 export default function Library() {
   const [booksArray, setBooksArray] = useState([]);
@@ -35,7 +35,6 @@ export default function Library() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   function getName(name) {
     const nameArr = name.split("-");
@@ -204,7 +203,10 @@ export default function Library() {
                             variant="h6"
                             sx={{
                               color: "grey",
-                              fontSize: windowWidth < 900 ? "0.5rem !important" : "0.7rem !important",
+                              fontSize:
+                                windowWidth < 900
+                                  ? "0.5rem !important"
+                                  : "0.7rem !important",
                             }}
                           >
                             {getAuthor(elem)}
