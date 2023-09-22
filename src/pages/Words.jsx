@@ -243,8 +243,9 @@ export default function Words() {
     <Box
       sx={{
         width: "100%",
-        minHeight: "80vh",
-        maxHeight: "80vh",
+        height: "75vh",
+        position: "relative",
+        overflow: "hidden",
         margin: "auto",
         bgcolor: "#f2f2f2",
       }}
@@ -272,7 +273,7 @@ export default function Words() {
         <Box
           sx={{
             margin: "auto",
-            height:"70vh",
+            height: "70vh",
             maxHeight: "70vh",
             bgcolor: "#f2f2f2",
             display: "flex",
@@ -282,16 +283,18 @@ export default function Words() {
             "@media (max-width: 600px)": {
               width: "90%", // Width for screens less than 600px
             },
-           
           }}
         >
-          {/* alphabet section I want this division to be sticky */}
+          {/* alphabet section */}
           <div
             className="alphabet-list"
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              position: "sticky",
+              justifyContent: "space-between",
+              height: "90%",
             }}
           >
             {alphabet.split("").map((letter) => (
@@ -299,7 +302,11 @@ export default function Words() {
                 color={"primary"}
                 underline="hover"
                 key={letter}
-                sx={{ cursor: "pointer" , fontFamily: 'Poppins, Arial, sans-serif',fontSize:"0.7rem"}}
+                sx={{
+                  cursor: "pointer",
+                  fontFamily: "Poppins, Arial, sans-serif",
+                  fontSize: "0.85rem",
+                }}
                 // href="#"
                 onClick={() => handleAlphabetClick(letter)}
                 className="alphabet-letter"
@@ -311,7 +318,13 @@ export default function Words() {
 
           {/* Word section */}
           <div
-            style={{ display: "flex", flexDirection: "column", width: "100%" }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "100%",
+              height: "100%",
+              overflow: "auto",
+            }}
           >
             {alphabet.split("").map((letter) => (
               <div

@@ -11,15 +11,15 @@ import { Container } from "@mui/material";
 function App() {
   return (
     <>
-    <Container>
-      <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/library" element={<Library />} />
-        {/* <Route path="/words" element={<Words />} /> */}
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Container>
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/library" element={<Library />} />
+          <Route path="/words" element={<Words />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Container>
     </>
   );

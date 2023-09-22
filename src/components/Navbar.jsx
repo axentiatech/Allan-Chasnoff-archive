@@ -115,7 +115,7 @@ const Navbar = () => {
                 navigate("/");
               }}
             >
-              <HomeIcon sx={{ color: "white" }} />{" "}
+              {/* <HomeIcon sx={{ color: "white" }} />{" "} */}
               <Typography sx={{ marginLeft: "10%" }} color={"white"}>
                 Home
               </Typography>
@@ -133,9 +133,46 @@ const Navbar = () => {
                 // },
               }}
             >
-              <AutoStoriesIcon sx={{ color: "white" }} />{" "}
+              {/* <AutoStoriesIcon sx={{ color: "white" }} />{" "} */}
               <Typography sx={{ marginLeft: "10%" }} color={"white"}>
                 Library
+              </Typography>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/words");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              {/* <WorkIcon sx={{ color: "white" }} />{" "} */}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                Words
+              </Typography>
+            </MenuItem>
+
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/about");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              {/* <LaptopMac sx={{ color: "white" }} />{" "} */}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                About
+              </Typography>
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate("/contact");
+              }}
+              sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
+            >
+              {/* <Person sx={{ color: "white" }} />{" "} */}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                Contact
               </Typography>
             </MenuItem>
           </Stack>
@@ -225,7 +262,7 @@ const Navbar = () => {
               </Typography>
             </MenuItem>
 
-            {/*<MenuItem
+            <MenuItem
               onClick={() => {
                 handleClose();
                 navigate("/words");
@@ -233,9 +270,11 @@ const Navbar = () => {
               sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
             >
               <WorkIcon sx={{ color: "white" }} />{" "}
-              <Typography color={"white"} sx={{ marginLeft: "10%" }}>Words</Typography>
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                Words
+              </Typography>
             </MenuItem>
-             
+
             <MenuItem
               onClick={() => {
                 handleClose();
@@ -244,7 +283,9 @@ const Navbar = () => {
               sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
             >
               <LaptopMac sx={{ color: "white" }} />{" "}
-              <Typography color={"white"} sx={{ marginLeft: "10%" }}>About</Typography>
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                About
+              </Typography>
             </MenuItem>
             <MenuItem
               onClick={() => {
@@ -254,8 +295,10 @@ const Navbar = () => {
               sx={{ borderBottom: "1px solid rgba(255,255,255,0.5)" }}
             >
               <Person sx={{ color: "white" }} />{" "}
-              <Typography color={"white"} sx={{ marginLeft: "10%" }}>Contact</Typography>
-            </MenuItem> */}
+              <Typography color={"white"} sx={{ marginLeft: "10%" }}>
+                Contact
+              </Typography>
+            </MenuItem>
           </Menu>
         </Stack>
       </Container>
