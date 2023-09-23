@@ -1,16 +1,16 @@
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
 const theme = createTheme({
-  palette:{
-    primary:{
-      main:"#5c9ff9"
+  palette: {
+    primary: {
+      main: "#5c9ff9",
     },
-    background:{
-      default:"#fff"
+    background: {
+      default: "#fff",
     },
-    text:{
-      default:"#fff"
-    }
+    text: {
+      default: "#fff",
+    },
   },
   breakpoints: {
     values: {
@@ -22,8 +22,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Poppins, Arial, sans-serif', 
+    fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
   },
-})
+});
 
 export default responsiveFontSizes(theme);
