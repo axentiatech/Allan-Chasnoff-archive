@@ -1,19 +1,20 @@
+import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
 import {
+  Box,
   Card,
   CardContent,
   CardHeader,
+  CircularProgress,
+  Divider,
+  IconButton,
+  Stack,
   TextField,
   Typography,
-  Box,
-  Stack,
-  Divider,
-  CircularProgress,
-  IconButton,
 } from "@mui/material";
-import { useEffect, useState } from "react";
-import MenuLib from "../components/MenuLib";
 import axios from "axios";
-import { CloseFullscreen, CloseRounded } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import Footer from "../components/Footer";
+import MenuLib from "../components/MenuLib";
 
 export default function Library() {
   const [booksArray, setBooksArray] = useState([]);
@@ -35,7 +36,6 @@ export default function Library() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   function getName(name) {
     const nameArr = name.split("-");
@@ -100,28 +100,29 @@ export default function Library() {
   );
 
   return (
-    <Card
-      sx={{
-        marginTop: windowWidth < 900 ? "10%" : "2%",
-        maxHeight: "80vh",
-        overflowY: "auto",
-        minHeight: "30vh",
-        position: "relative",
-      }}
-    >
-      {loading ? (
-        <CircularProgress
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            color: "skyblue",
-          }}
-        />
-      ) : (
-        <>
-          {/* Search Feature 
+    <>
+      <Card
+        sx={{
+          marginTop: windowWidth < 900 ? "10%" : "2%",
+          maxHeight: "80vh",
+          overflowY: "auto",
+          minHeight: "30vh",
+          position: "relative",
+        }}
+      >
+        {loading ? (
+          <CircularProgress
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              color: "skyblue",
+            }}
+          />
+        ) : (
+          <>
+            {/* Search Feature 
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -145,89 +146,94 @@ export default function Library() {
               <CloseRounded />
             </IconButton>
           </Stack> */}
-          <CardContent>
-            {filteredItems.length === 0 ? (
-              <Box sx={{ width: "90%", margin: "auto" }}>
-                <Typography variant="h6">
-                  Sorry, we couldn't find any results matching your search.
-                </Typography>
-              </Box>
-            ) : (
-              filteredItems.map((elem, id) => {
-                return (
-                  <div key={id}>
-                    <Stack
-                      direction="row"
-                      sx={{
-                        marginTop: {
-                          xs: "1%",
-                          lg: "0.5%",
-                        },
-                      }}
-                      alignItems={"center"}
-                      justifyContent={"space-between"}
-                      spacing={6}
-                    >
+            <CardContent>
+              {filteredItems.length === 0 ? (
+                <Box sx={{ width: "90%", margin: "auto" }}>
+                  <Typography variant="h6">
+                    Sorry, we couldn't find any results matching your search.
+                  </Typography>
+                </Box>
+              ) : (
+                filteredItems.map((elem, id) => {
+                  return (
+                    <div key={id}>
                       <Stack
                         direction="row"
-                        spacing={1}
-                        sx={{ alignItems: "center", maxWidth: "80%" }}
+                        sx={{
+                          marginTop: {
+                            xs: "1%",
+                            lg: "0.5%",
+                          },
+                        }}
+                        alignItems={"center"}
+                        justifyContent={"space-between"}
+                        spacing={6}
                       >
-                        <img
-                          src={
-                            "https://allanarchive-backend.onrender.com/images/" +
-                            (id + 1) +
-                            ".jpg"
-                          }
-                          style={{
-                            width: windowWidth < 900 ? "8vw" : "4vw",
-                          }}
-                        />
-                        <div>
-                          <Typography
-                            variant="h6"
-                            // style={{
-                            //   fontSize:"0.8rem"
-                            // }}
-                            sx={{
-                              cursor: "pointer",
-                              "&:hover": { textDecoration: "underline" },
-                              fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
-                              wordWrap: "break-word",
-                              whiteSpace: "normal",
+                        <Stack
+                          direction="row"
+                          spacing={1}
+                          sx={{ alignItems: "center", maxWidth: "80%" }}
+                        >
+                          <img
+                            src={
+                              "https://allanarchive-backend.onrender.com/images/" +
+                              (id + 1) +
+                              ".jpg"
+                            }
+                            style={{
+                              width: windowWidth < 900 ? "8vw" : "4vw",
                             }}
-                            color={"#45accf"}
-                          >
-                            {getName(elem)}
-                          </Typography>
-                          <Typography
-                            variant="h6"
-                            sx={{
-                              color: "grey",
-                              fontSize: windowWidth < 900 ? "0.5rem !important" : "0.7rem !important",
-                            }}
-                          >
-                            {getAuthor(elem)}
-                          </Typography>
-                        </div>
+                          />
+                          <div>
+                            <Typography
+                              variant="h6"
+                              // style={{
+                              //   fontSize:"0.8rem"
+                              // }}
+                              sx={{
+                                cursor: "pointer",
+                                "&:hover": { textDecoration: "underline" },
+                                fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
+                                wordWrap: "break-word",
+                                whiteSpace: "normal",
+                              }}
+                              color={"#45accf"}
+                            >
+                              {getName(elem)}
+                            </Typography>
+                            <Typography
+                              variant="h6"
+                              sx={{
+                                color: "grey",
+                                fontSize:
+                                  windowWidth < 900
+                                    ? "0.5rem !important"
+                                    : "0.7rem !important",
+                              }}
+                            >
+                              {getAuthor(elem)}
+                            </Typography>
+                          </div>
+                        </Stack>
+                        <MenuLib pdf={booksArray[id]} />
                       </Stack>
-                      <MenuLib pdf={booksArray[id]} />
-                    </Stack>
-                    <Divider
-                      variant="fullWidth"
-                      sx={{
-                        color: "#f4f4f4",
-                        borderWidth: "3px",
-                        marginTop: "0.5%",
-                      }}
-                    />
-                  </div>
-                );
-              })
-            )}
-          </CardContent>
-        </>
-      )}
-    </Card>
+                      <Divider
+                        variant="fullWidth"
+                        sx={{
+                          color: "#f4f4f4",
+                          borderWidth: "3px",
+                          marginTop: "0.5%",
+                        }}
+                      />
+                    </div>
+                  );
+                })
+              )}
+            </CardContent>
+          </>
+        )}
+      </Card>
+      <Footer />{" "}
+    </>
   );
 }
