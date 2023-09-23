@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import {
   Box,
   Button,
@@ -7,6 +6,8 @@ import {
   Link,
   Typography,
 } from "@mui/material";
+import React, { useRef } from "react";
+import Footer from "../components/Footer";
 
 export default function Words() {
   const words = [
@@ -240,107 +241,112 @@ export default function Words() {
   };
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "75vh",
-        position: "relative",
-        overflow: "hidden",
-        margin: "auto",
-        bgcolor: "#f2f2f2",
-      }}
-    >
-      <Typography
-        variant="h4"
-        align="center"
-        color={"#409aba"}
-        sx={{
-          fontWeight: "800",
-          borderTop: "1px solid #409aba",
-          marginTop: "2%",
-        }}
-      >
-        WORDS
-      </Typography>
+    <>
       <Box
         sx={{
           width: "100%",
-          marginTop: "2%",
-          overflow: "auto",
+          height: "75vh",
+          position: "relative",
+          overflow: "hidden",
+          margin: "auto",
+          marginTop: "23px",
+          // marginBottom: "70px",
           bgcolor: "#f2f2f2",
         }}
       >
-        <Box
+        <Typography
+          variant="h4"
+          align="center"
+          color={"#409aba"}
           sx={{
-            margin: "auto",
-            height: "70vh",
-            maxHeight: "70vh",
-            bgcolor: "#f2f2f2",
-            display: "flex",
-            justifyContent: "space-between",
-            gap: "1%",
-            width: "60%", // Default width for screens wider than 600px
-            "@media (max-width: 600px)": {
-              width: "90%", // Width for screens less than 600px
-            },
+            fontWeight: "800",
+            borderTop: "1px solid #409aba",
+            marginTop: "2%",
           }}
         >
-          {/* alphabet section */}
-          <div
-            className="alphabet-list"
-            style={{
+          WORDS
+        </Typography>
+        <Box
+          sx={{
+            width: "100%",
+            marginTop: "2%",
+            overflow: "auto",
+            bgcolor: "#f2f2f2",
+          }}
+        >
+          <Box
+            sx={{
+              margin: "auto",
+              height: "70vh",
+              maxHeight: "70vh",
+              bgcolor: "#f2f2f2",
               display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              position: "sticky",
               justifyContent: "space-between",
-              height: "90%",
+              gap: "1%",
+              width: "60%", // Default width for screens wider than 600px
+              "@media (max-width: 600px)": {
+                width: "90%", // Width for screens less than 600px
+              },
             }}
           >
-            {alphabet.split("").map((letter) => (
-              <Link
-                color={"primary"}
-                underline="hover"
-                key={letter}
-                sx={{
-                  cursor: "pointer",
-                  fontFamily: "Poppins, Arial, sans-serif",
-                  fontSize: "0.85rem",
-                }}
-                // href="#"
-                onClick={() => handleAlphabetClick(letter)}
-                className="alphabet-letter"
-              >
-                {letter}
-              </Link>
-            ))}
-          </div>
+            {/* alphabet section */}
+            <div
+              className="alphabet-list"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                position: "sticky",
+                justifyContent: "space-between",
+                height: "90%",
+              }}
+            >
+              {alphabet.split("").map((letter) => (
+                <Link
+                  color={"primary"}
+                  underline="hover"
+                  key={letter}
+                  sx={{
+                    cursor: "pointer",
+                    fontFamily: "Poppins, Arial, sans-serif",
+                    fontSize: "0.85rem",
+                  }}
+                  // href="#"
+                  onClick={() => handleAlphabetClick(letter)}
+                  className="alphabet-letter"
+                >
+                  {letter}
+                </Link>
+              ))}
+            </div>
 
-          {/* Word section */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "100%",
-              overflow: "auto",
-            }}
-          >
-            {alphabet.split("").map((letter) => (
-              <div
-                key={letter}
-                ref={(el) => (alphabetRef.current[letter] = el)}
-              >
-                {/* <Typography variant="h5" sx={{ marginTop: 2 }}>{letter}</Typography> */}
-                {groupedWords[letter]?.map((elem, idx) => (
-                  <EachCard key={idx} word={elem} />
-                ))}
-              </div>
-            ))}
-          </div>
+            {/* Word section */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                height: "100%",
+                overflow: "auto",
+              }}
+            >
+              {alphabet.split("").map((letter) => (
+                <div
+                  key={letter}
+                  ref={(el) => (alphabetRef.current[letter] = el)}
+                >
+                  {/* <Typography variant="h5" sx={{ marginTop: 2 }}>{letter}</Typography> */}
+                  {groupedWords[letter]?.map((elem, idx) => (
+                    <EachCard key={idx} word={elem} />
+                  ))}
+                </div>
+              ))}
+            </div>
+          </Box>
         </Box>
       </Box>
-    </Box>
+      <Footer />
+    </>
   );
 }
 

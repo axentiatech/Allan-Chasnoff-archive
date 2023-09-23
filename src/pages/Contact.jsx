@@ -1,15 +1,16 @@
+import emailjs from "@emailjs/browser";
 import {
-  Typography,
+  Button,
   Card,
   CardContent,
   CardMedia,
   Divider,
   TextField,
-  Button,
+  Typography,
 } from "@mui/material";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -68,141 +69,147 @@ export default function Contact() {
   };
 
   return (
-    <Card
-      sx={{
-        backgroundImage: "url(/background.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        width: {
-          xs:"80%",
-          lg:"60%",
-        },
-        margin: "auto",
-        marginTop: {
-          xs:"5%",
-          lg:"2%",
-        },
-      }}
-    >
-      <CardContent
+    <>
+      <Card
         sx={{
-          backgroundColor: "rgba(0,0,0,0.5)",
-          display: "flex",
-          flexDirection: "column",
+          backgroundImage: "url(/background.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: {
+            xs: "80%",
+            lg: "60%",
+          },
+          margin: "auto",
+          marginTop: {
+            xs: "5%",
+            lg: "2%",
+          },
         }}
       >
-        <Typography
-          variant="h3"
-          color="white"
-          align="center"
-          sx={{ fontWeight: "600", marginTop:{
-            xs: "6%",
-            lg:"3%",
-          } }}
-        >
-          Tell Us How <br /> We Can Help
-        </Typography>
-        <Divider
-          color="white"
+        <CardContent
           sx={{
-            width: "100px",
-            height: "4px",
-            margin: "auto",
-            marginTop: {
-              xs:"10%",
-              lg:"5%",
-            },
+            backgroundColor: "rgba(0,0,0,0.5)",
+            display: "flex",
+            flexDirection: "column",
           }}
-          variant="middle"
-        />
-        <form ref={form} onSubmit={sendEmail}>
-          <TextField
-            disabled={success}
-            label={nameError ? "Enter valid Name" : "Name"}
-            variant="filled"
-            name="user_name"
-            error={nameError}
-            onChange={(e) => {
-              setName(e.target.value);
-              setNameError(false);
-            }}
-            fullWidth
+        >
+          <Typography
+            variant="h3"
+            color="white"
+            align="center"
             sx={{
-              backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
-              "& .MuiInputBase-input": {
-                color: "black", // Set the text color to black
-              },
-              "& .MuiInputLabel-root": {
-                color: "black", // Set the label color to black (optional)
-              },
-              marginTop: "3%",
-            }}
-          />
-
-          <TextField
-            disabled={success}
-            label={emailError ? "Enter a valid email" : "Email"}
-            variant="filled"
-            name="user_email"
-            error={emailError}
-            fullWidth
-            onChange={(e) => {
-              setEmail(e.target.value);
-              setEmailError(false);
-            }}
-            sx={{
-              backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
-              "& .MuiInputBase-input": {
-                color: "black", // Set the text color to black
-              },
-              "& .MuiInputLabel-root": {
-                color: "black", // Set the label color to black (optional)
-              },
-              marginTop: "3%",
-            }}
-          />
-          <TextField
-            disabled={success}
-            label={textError ? "Enter valid message" : "Message"}
-            variant="filled"
-            fullWidth
-            name="message"
-            error={textError}
-            multiline
-            rows={4}
-            onChange={(e) => {
-              setText(e.target.value);
-              setTextError(false);
-            }}
-            sx={{
-              backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
-              "& .MuiInputBase-input": {
-                color: "black", // Set the text color to black
-              },
-              "& .MuiInputLabel-root": {
-                color: "black", // Set the label color to black (optional)
-              },
-              marginTop: "3%",
-            }}
-          />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            sx={{
-              background: success ? "green" : "black",
-              color: "white",
-              marginTop: "3%",
-              "&:hover": {
-                bgcolor: success ? "darkgreen" : "rgba(30,30,30,1)",
-                color: "white",
+              fontWeight: "600",
+              marginTop: {
+                xs: "6%",
+                lg: "3%",
               },
             }}
           >
-            {success ? "Message Sent Successfully" : "Submit"}
-          </Button>
-        </form>
-      </CardContent>
-    </Card>
+            Tell Us How <br /> We Can Help
+          </Typography>
+          <Divider
+            color="white"
+            sx={{
+              width: "100px",
+              height: "4px",
+              margin: "auto",
+              marginTop: {
+                xs: "10%",
+                lg: "5%",
+              },
+            }}
+            variant="middle"
+          />
+          <form ref={form} onSubmit={sendEmail}>
+            <TextField
+              disabled={success}
+              label={nameError ? "Enter valid Name" : "Name"}
+              variant="filled"
+              name="user_name"
+              error={nameError}
+              onChange={(e) => {
+                setName(e.target.value);
+                setNameError(false);
+              }}
+              fullWidth
+              sx={{
+                backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
+                "& .MuiInputBase-input": {
+                  color: "black", // Set the text color to black
+                },
+                "& .MuiInputLabel-root": {
+                  color: "black", // Set the label color to black (optional)
+                },
+                marginTop: "3%",
+              }}
+            />
+
+            <TextField
+              disabled={success}
+              label={emailError ? "Enter a valid email" : "Email"}
+              variant="filled"
+              name="user_email"
+              error={emailError}
+              fullWidth
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setEmailError(false);
+              }}
+              sx={{
+                backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
+                "& .MuiInputBase-input": {
+                  color: "black", // Set the text color to black
+                },
+                "& .MuiInputLabel-root": {
+                  color: "black", // Set the label color to black (optional)
+                },
+                marginTop: "3%",
+              }}
+            />
+            <TextField
+              disabled={success}
+              label={textError ? "Enter valid message" : "Message"}
+              variant="filled"
+              fullWidth
+              name="message"
+              error={textError}
+              multiline
+              rows={4}
+              onChange={(e) => {
+                setText(e.target.value);
+                setTextError(false);
+              }}
+              sx={{
+                backgroundColor: "rgba(255,255,255,0.8)", // Set the background color to white
+                "& .MuiInputBase-input": {
+                  color: "black", // Set the text color to black
+                },
+                "& .MuiInputLabel-root": {
+                  color: "black", // Set the label color to black (optional)
+                },
+                marginTop: "3%",
+              }}
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{
+                background: success ? "green" : "black",
+                color: "white",
+                marginTop: "3%",
+                "&:hover": {
+                  bgcolor: success ? "darkgreen" : "rgba(30,30,30,1)",
+                  color: "white",
+                },
+              }}
+            >
+              {success ? "Message Sent Successfully" : "Submit"}
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
+      <Footer />{" "}
+    </>
   );
 }

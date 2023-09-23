@@ -1,23 +1,22 @@
+import { ContactMail, LaptopMac, Person } from "@mui/icons-material";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import HomeIcon from "@mui/icons-material/Home";
+import MenuIcon from "@mui/icons-material/Menu";
+import WorkIcon from "@mui/icons-material/Work";
 import {
-  Typography,
-  Container,
-  Stack,
-  IconButton,
-  Button,
+  Avatar,
   Box,
-  Drawer,
+  Button,
+  Container,
   Divider,
+  Drawer,
+  IconButton,
   Menu,
   MenuItem,
-  Avatar,
+  Stack,
+  Typography,
 } from "@mui/material";
-import React, { useEffect } from "react";
-import { useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
-import HomeIcon from "@mui/icons-material/Home";
-import AutoStoriesIcon from "@mui/icons-material/AutoStories";
-import WorkIcon from "@mui/icons-material/Work";
-import { ContactMail, LaptopMac, Person } from "@mui/icons-material";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
 const Navbar = () => {
@@ -93,14 +92,14 @@ const Navbar = () => {
             //   },
             // }}
             >
-              <Avatar />{" "}
+              {/* <Avatar />{" "}
               <Typography
                 variant="h6"
                 color="white"
                 style={{ marginLeft: "1rem" }}
               >
                 Allan Chasanoff
-              </Typography>
+              </Typography> */}
             </MenuItem>
             <MenuItem
               sx={{

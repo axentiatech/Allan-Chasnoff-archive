@@ -1,9 +1,10 @@
+import { Collections } from "@mui/icons-material";
+import ArticleIcon from "@mui/icons-material/Article";
+import CollectionsIcon from "@mui/icons-material/Collections";
 import { Stack, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect } from "react";
-import ArticleIcon from "@mui/icons-material/Article";
-import CollectionsIcon from "@mui/icons-material/Collections";
-import { Collections } from "@mui/icons-material";
+import Footer from "../components/Footer";
 export default function Home() {
   useEffect(() => {
     axios
@@ -33,10 +34,16 @@ export default function Home() {
           spacing={3}
           alignItems="center"
           justify="space-around"
+          marginBottom={"80px"}
         >
           <img
-            src="/firstImage.jpeg"
-            style={{ maxWidth: "80%", margin: "auto", marginTop: "1rem" }}
+            src="/home-image.png"
+            style={{
+              maxWidth: "80%",
+              margin: "auto",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}
           />
           <Typography variant="h5" color="white">
             A gateway of endless knowledge
@@ -74,23 +81,34 @@ export default function Home() {
           <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
             <ArticleIcon style={{ color: "white" }} />
             <i style={{ color: "white" }}>
-              Digital Library of Books and collected by Allan Chasanoff
+              Digital Library of Books collected By Allan Chasanoff{" "}
             </i>
           </div>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
             <Collections style={{ color: "white" }} />
             <i style={{ color: "white" }}>
-              Digital Collection of Words and held meaning as Allan Chasanoff
+              Digital Library of words collected By Allan Chasanoff{" "}
             </i>
           </div>
-          <video width="60%" height="100%" controls>
+          <video width="40%" height="70%" controls>
             <source src="/video.mp4" type="video/mp4" />
           </video>
-          <i style={{ color: "white", marginBottom: "3rem" }}>
+          {/* <i style={{ color: "white", marginBottom: "3rem" }}>
             © Chasanoff Archive - 2023
-          </i>
+          </i> */}
         </Stack>
       }
+      {/* <Footer /> */}
+      <div
+        style={{
+          color: "white",
+          marginBottom: "2.5rem",
+          // marginLeft: "45.6%",
+          textAlign: "center",
+        }}
+      >
+        © Chasanoff Archive - 2023
+      </div>
     </>
   );
 }

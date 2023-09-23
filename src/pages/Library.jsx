@@ -15,6 +15,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import MenuLib from "../components/MenuLib";
 
+import Footer from "../components/Footer";
 import { booksData } from "../utils/data";
 
 export default function Library() {
@@ -118,139 +119,150 @@ export default function Library() {
   // );
 
   return (
-    <Card
-      sx={{
-        marginTop: windowWidth < 900 ? "10%" : "2%",
-        maxHeight: "80vh",
-        overflowY: "auto",
-        minHeight: "30vh",
-        position: "relative",
-      }}
-    >
-      {loading ? (
-        <CircularProgress
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            color: "skyblue",
-          }}
-        />
-      ) : (
-        <>
-          {/* Search Feature */}
-          <Stack
-            direction={"row"}
-            alignItems={"center"}
-            sx={{ width: "80%", margin: "auto", marginTop: "2%" }}
-          >
-            <TextField
-              value={search}
-              variant="filled"
-              label="search"
-              fullWidth
-              autoComplete="off"
-              onChange={(e) => {
-                handleChange(e.target.value);
-              }}
-            />
-            <IconButton
-              onClick={() => {
-                setSearch("");
-                setBooks(booksData);
+    <>
+      <Card
+        sx={{
+          marginTop: windowWidth < 900 ? "10%" : "2%",
+          maxHeight: "80vh",
+          marginBottom: "50px",
+          overflowY: "auto",
+          minHeight: "30vh",
+          position: "relative",
+        }}
+      >
+        {loading ? (
+          <CircularProgress
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              color: "skyblue",
+            }}
+          />
+        ) : (
+          <>
+            {/* Search Feature */}
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              sx={{
+                width: "60%",
+                margin: "auto",
+                marginTop: "2%",
               }}
             >
-              <CloseRounded />
-            </IconButton>
-          </Stack>
-          {/* filteredItems.length === 0 ? (
+              <TextField
+                value={search}
+                variant="filled"
+                label="Search"
+                fullWidth
+                size="small"
+                // fontSize="small"
+                // sx={{ padding: "5px", paddingBottom: 0 }}
+                autoComplete="off"
+                onChange={(e) => {
+                  handleChange(e.target.value);
+                }}
+              />
+              <IconButton
+                onClick={() => {
+                  setSearch("");
+                  setBooks(booksData);
+                }}
+              >
+                <CloseRounded />
+              </IconButton>
+            </Stack>
+            {/* filteredItems.length === 0 ? (
               <Box sx={{ width: "90%", margin: "auto" }}>
                 <Typography variant="h6">
                   Sorry, we couldn't find any results matching your search.
                 </Typography>
               </Box>
             )  */}
-          <CardContent>
-            {books.map((data, id) => {
-              return (
-                <div key={id}>
-                  <Stack
-                    direction="row"
-                    sx={{
-                      marginTop: {
-                        xs: "1%",
-                        lg: "0.5%",
-                      },
-                    }}
-                    alignItems={"center"}
-                    justifyContent={"space-between"}
-                    spacing={6}
-                  >
+            <CardContent>
+              {books.map((data, id) => {
+                return (
+                  <div key={id}>
                     <Stack
                       direction="row"
-                      spacing={1}
-                      sx={{ alignItems: "center", maxWidth: "80%" }}
+                      sx={{
+                        marginTop: {
+                          xs: "1%",
+                          lg: "0.5%",
+                        },
+                      }}
+                      alignItems={"center"}
+                      justifyContent={"space-between"}
+                      spacing={6}
                     >
-                      <img
-                        src={"/thumbnails/" + (id + 1) + ".png"}
-                        style={{
-                          width: windowWidth < 900 ? "8vw" : "4vw",
-                        }}
-                      />
-                      <div>
-                        <Typography
-                          variant="h6"
-                          sx={{
-                            cursor: "pointer",
-                            "&:hover": { textDecoration: "underline" },
-                            fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
-                            wordWrap: "break-word",
-                            whiteSpace: "normal",
+                      <Stack
+                        direction="row"
+                        spacing={1}
+                        sx={{ alignItems: "center", maxWidth: "80%" }}
+                      >
+                        <img
+                          src={"/thumbnails/" + (id + 1) + ".png"}
+                          style={{
+                            width: windowWidth < 900 ? "8vw" : "4vw",
                           }}
-                          onClick={() =>
-                            window.open(
-                              window.location.origin +
-                                "/books/" +
-                                (id + 1) +
-                                ".pdf",
-                              "_blank"
-                            )
-                          }
-                          color={"#45accf"}
-                        >
-                          {data.name}
-                        </Typography>
-                        <Typography
-                          variant="h6"
-                          sx={{
-                            color: "grey",
-                            fontSize:
-                              windowWidth < 900
-                                ? "0.5rem !important"
-                                : "0.7rem !important",
-                          }}
-                        >
-                          {data.author}
-                        </Typography>
-                      </div>
+                        />
+                        <div>
+                          <Typography
+                            variant="h6"
+                            sx={{
+                              cursor: "pointer",
+                              "&:hover": { textDecoration: "underline" },
+                              fontSize: windowWidth < 900 ? "0.8rem" : "1rem",
+                              wordWrap: "break-word",
+                              whiteSpace: "normal",
+                            }}
+                            onClick={() =>
+                              window.open(
+                                window.location.origin +
+                                  "/books/" +
+                                  (id + 1) +
+                                  ".pdf",
+                                "_blank"
+                              )
+                            }
+                            color={"#45accf"}
+                          >
+                            {data.name}
+                          </Typography>
+                          <Typography
+                            variant="h6"
+                            sx={{
+                              color: "grey",
+                              fontSize:
+                                windowWidth < 900
+                                  ? "0.5rem !important"
+                                  : "0.7rem !important",
+                            }}
+                          >
+                            {data.author}
+                          </Typography>
+                        </div>
+                      </Stack>
+                      {/* <MenuLib pdf={id + 1} /> */}
                     </Stack>
-                    {/* <MenuLib pdf={id + 1} /> */}
-                  </Stack>
-                  <Divider
-                    variant="fullWidth"
-                    sx={{
-                      color: "#f4f4f4",
-                      borderWidth: "3px",
-                      marginTop: "0.5%",
-                    }}
-                  />
-                </div>
-              );
-            })}
-          </CardContent>
-        </>
-      )}
-    </Card>
+                    <Divider
+                      variant="fullWidth"
+                      sx={{
+                        color: "#f4f4f4",
+                        borderWidth: "3px",
+                        marginTop: "0.5%",
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </CardContent>
+          </>
+        )}
+      </Card>
+      <Footer />
+    </>
   );
 }
