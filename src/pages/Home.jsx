@@ -45,7 +45,7 @@ export default function Home() {
               marginBottom: "2rem",
             }}
           />
-          <Typography variant="h5" color="white">
+          <Typography variant="h5" color="white" align="center">
             A gateway of endless knowledge
           </Typography>
           <Typography variant="h6" color="white" align="center">

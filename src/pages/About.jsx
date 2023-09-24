@@ -76,7 +76,7 @@ function About() {
           >
             <img
               src="/person.png"
-              width={250}
+              width={400}
               style={{ margin: "auto", textAlign: "center" }}
             />
           </div>
@@ -91,19 +91,11 @@ function About() {
             <Typography
               sx={{ lineHeight: "2.5", fontSize: 18, fontWeight: "500" }}
             >
-              Welcome to the Allan Chasanoff Read and Note Archive. A site
-              dedicated to the work done as a user by Allan Chassanoff in the
-              Read and Note Platform This is a delineated archive of Allan
-              Chasanoff digital library of books and culled pensive Words .
-              Here, you can explore his collection of books and Words curated by
-              Allan Chasanoff. Allan was passionate about preserving memories
-              and history. This archive is a collection of some of Allan’s
-              digital work, dedicated to capturing the essence of moments and
-              the stories they can tell about him.
+              Welcome to the Allan Chasanoff Read and Note Archive.  A site dedicated to the work done as a user by Allan Chassanoff in the  Read and Note Platform.  This is a delineated archive of Allan Chasanoff digital library  of books and culled Words .  You can explore his collection of Books and Words hand picked by Allan Chasanoff.  Allan was passionate about preserving memories and history.   This archive is a collection of some of Allan’s digital work, dedicated to capturing  the essence of moments and the stories they can tell about him.
             </Typography>
           </div>
           <div style={{ margin: "auto", textAlign: "center", marginTop: 20 }}>
-            <video src="/video.mp4" width={250} controls></video>
+            <video src="/video_girl.mp4" width={250} controls poster="/thumbnail.png"></video>
           </div>
         </CardContent>
       </Card>
