@@ -57,7 +57,6 @@ function About() {
             sx={{
               width: "100%",
               color: "#53A3C1",
-              bgcolor: "#f4f4f4",
               textAlign: "center",
               // marginTop: "2%",
               borderTop: "1px solid #53A3C1",
@@ -69,9 +68,15 @@ function About() {
           </Typography>
           <div
             style={{
+              backgroundColor: "#d1d5db",
+              maxWidth: "95%",
+              margin: "auto"
+            }}
+          >
+          <div
+            style={{
               margin: "auto",
               textAlign: "center",
-              marginTop: 25,
               marginBottom: 25,
             }}
           >
@@ -90,6 +95,7 @@ function About() {
                       : "75%"
                     : "57%", // Set width based on screen width
                 margin: "auto",
+                padding: "16px 0 16px 0",
                 textAlign: "center",
               }}
               alt="Person"
@@ -131,13 +137,14 @@ function About() {
               him.
             </Typography>
           </div>
-          <div style={{ margin: "auto", textAlign: "center", marginTop: 20 }}>
+          <div style={{ margin: "auto", textAlign: "center", marginTop: 20 , padding: "16px 0 16px 0", }}>
             <video
               src="/video_girl.mp4"
               width={250}
               controls
               poster="/thumbnail.png"
             ></video>
+          </div>
           </div>
         </CardContent>
       </Card>
