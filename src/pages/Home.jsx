@@ -90,7 +90,7 @@ export default function Home() {
               Digital Library of words collected By Allan Chasanoff{" "}
             </i>
           </div>
-          <video width="40%" height="70%" controls>
+          <video width="60%" height="90%" controls poster="/thumnailhome.png">
             <source src="/video.mp4" type="video/mp4" />
           </video>
           {/* <i style={{ color: "white", marginBottom: "3rem" }}>
