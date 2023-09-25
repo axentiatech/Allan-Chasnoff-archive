@@ -203,7 +203,8 @@ export default function Library() {
                         sx={{ alignItems: "center", maxWidth: "80%" }}
                       >
                         <img
-                          src={"/thumbnails/" + (id + 1) + ".png"}
+                          // src={"/thumbnails/" + (id + 1) + ".png"}
+                          src="thumbnailplace.png"
                           style={{
                             width: windowWidth < 900 ? "8vw" : "4vw",
                           }}
@@ -220,8 +221,8 @@ export default function Library() {
                             }}
                             onClick={() =>
                               window.open(
-                                window.location.origin +
-                                  "/books/" +
+                                // window.location.origin +
+                                "https://readandnote.com/ac_archive/" +
                                   (id + 1) +
                                   ".pdf",
                                 "_blank"
