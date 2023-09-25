@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React, { useRef } from "react";
 import Footer from "../components/Footer";
+import { words } from "../constants/words";
 
 export default function Words() {
   const words = [

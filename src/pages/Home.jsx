@@ -3,9 +3,23 @@ import ArticleIcon from "@mui/icons-material/Article";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import { Stack, Typography } from "@mui/material";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     axios
       .get("https://allanarchive-backend.onrender.com/")
@@ -25,6 +39,7 @@ export default function Home() {
         console.log(err);
       });
   }, []);
+  const videoWidth = windowWidth >= 1024 ? "40%" : "60%";
 
   return (
     <>
@@ -90,7 +105,12 @@ export default function Home() {
               Digital Library of words collected By Allan Chasanoff{" "}
             </i>
           </div>
-          <video width="60%" height="90%" controls poster="/thumnailhome.png">
+          <video
+            width={videoWidth}
+            height="90%"
+            controls
+            poster="/thumnailhome.png"
+          >
             <source src="/video.mp4" type="video/mp4" />
           </video>
           {/* <i style={{ color: "white", marginBottom: "3rem" }}>
