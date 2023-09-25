@@ -124,7 +124,7 @@ export default function Library() {
         sx={{
           marginTop: windowWidth < 900 ? "10%" : "2%",
           maxHeight: "80vh",
-          marginBottom: "50px",
+          // marginBottom: "50px",
           overflowY: "auto",
           minHeight: "30vh",
           position: "relative",
@@ -262,7 +262,18 @@ export default function Library() {
           </>
         )}
       </Card>
-      <Footer />
+      {/* <Footer /> */}
+      <div
+        style={{
+          color: "white",
+          marginTop: "20px",
+          marginBottom: "2.5rem",
+          // marginLeft: "45.6%",
+          textAlign: "center",
+        }}
+      >
+        © Chasanoff Archive - 2023
+      </div>
     </>
   );
 }

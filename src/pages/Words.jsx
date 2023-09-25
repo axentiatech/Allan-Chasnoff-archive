@@ -345,7 +345,18 @@ export default function Words() {
           </Box>
         </Box>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
+      <div
+        style={{
+          color: "white",
+          marginTop: "20px",
+          marginBottom: "2.5rem",
+          // marginLeft: "45.6%",
+          textAlign: "center",
+        }}
+      >
+        © Chasanoff Archive - 2023
+      </div>
     </>
   );
 }

@@ -34,8 +34,9 @@ function About() {
       <Card
         sx={{
           marginTop: windowWidth < 900 ? "10%" : "2%",
+          width: "100%",
           maxHeight: "80vh",
-          marginBottom: "50px",
+          // marginBottom: "50px",
           overflowY: "auto",
           minHeight: "30vh",
           position: "relative",
@@ -74,32 +75,84 @@ function About() {
               marginBottom: 25,
             }}
           >
+            {/* <img
+              src="/person.png"
+              width="50%"
+              style={{ margin: "auto", textAlign: "center" }}
+            /> */}
             <img
               src="/person.png"
-              width={400}
-              style={{ margin: "auto", textAlign: "center" }}
+              style={{
+                width:
+                  windowWidth <= 820
+                    ? windowWidth <= 767
+                      ? "97%"
+                      : "75%"
+                    : "57%", // Set width based on screen width
+                margin: "auto",
+                textAlign: "center",
+              }}
+              alt="Person"
             />
           </div>
           <div
             style={{
-              width: "45%",
+              width: "98%",
               margin: "auto",
               textAlign: "center",
               // lineHeight: "1px",
             }}
           >
             <Typography
-              sx={{ lineHeight: "2.5", fontSize: 18, fontWeight: "500" }}
+              sx={{
+                // width: "100%",
+                "@media (max-width: 768px)": {
+                  lineHeight: "1.6", // Line height for mobile views (adjust the breakpoint as needed)
+                },
+                "@media (min-width: 769px)": {
+                  lineHeight: "2.2", // Line height for non-mobile views (adjust the breakpoint as needed)
+                },
+                fontSize: 20,
+                fontWeight: "500",
+              }}
             >
-              Welcome to the Allan Chasanoff Read and Note Archive.  A site dedicated to the work done as a user by Allan Chassanoff in the  Read and Note Platform.  This is a delineated archive of Allan Chasanoff digital library  of books and culled Words .  You can explore his collection of Books and Words hand picked by Allan Chasanoff.  Allan was passionate about preserving memories and history.   This archive is a collection of some of Allan’s digital work, dedicated to capturing  the essence of moments and the stories they can tell about him.
+              Welcome to the Allan Chasanoff Read and Note Archive. <br /> A
+              site dedicated to the work done as a user by Allan Chassanoff in
+              the
+              <br /> Read and Note Platform. <br /> This is a delineated archive
+              of Allan Chasanoff digital library <br /> of books and culled
+              Words.
+              <br /> You can explore his collection of Books and Words hand
+              picked by Allan Chasanoff. <br /> Allan was passionate about
+              preserving memories and history.
+              <br /> This archive is a collection of some of Allan’s digital
+              work, dedicated to capturing
+              <br /> the essence of moments and the stories they can tell about
+              him.
             </Typography>
           </div>
           <div style={{ margin: "auto", textAlign: "center", marginTop: 20 }}>
-            <video src="/video_girl.mp4" width={250} controls poster="/thumbnail.png"></video>
+            <video
+              src="/video_girl.mp4"
+              width={250}
+              controls
+              poster="/thumbnail.png"
+            ></video>
           </div>
         </CardContent>
       </Card>
-      <Footer />{" "}
+      {/* <Footer /> */}
+      <div
+        style={{
+          color: "white",
+          marginTop: "20px",
+          marginBottom: "2.5rem",
+          // marginLeft: "45.6%",
+          textAlign: "center",
+        }}
+      >
+        © Chasanoff Archive - 2023
+      </div>
       {/* <Box
         sx={{
           width: {
