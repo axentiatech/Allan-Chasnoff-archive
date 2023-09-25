@@ -13,6 +13,62 @@ import { words } from "../constants/words";
 export default function Words() {
   const words = [
     {
+      word: "faradi",
+      sentence: `The pains caused by brush faradization are indescribable.`,
+      book: "Freud In His Time and Ours",
+    },
+    {
+      word: "fascicle",
+      sentence: `Then there is what he calls the "fascicle book,>' with complicated offshoots 
+      of roots that still trace back to a taproot.`,
+      book: "Theory of Literature",
+    },
+    {
+      word: "Festschrift",
+      sentence: `As he pointed out in his contribution to the Festschrift for Gadamer's 
+      seventieth birthday,`,
+      book: "Habermas A Biography",
+    },
+    {
+      word: "filiations",
+      sentence: `tenuous filiations in Benjamin's intellectual position could be interpreted, 
+      uncharitably, as opportunism:`,
+      book: "Walther Benjamin A Critical Life",
+    },
+    {
+      word: "Flensed",
+      sentence: `Flensed, scraped, split, burnished and seasoned to a creamy off-white 
+      uniformity.`,
+      book: "Fud's Book",
+    },
+    {
+      word: "foreign",
+      sentence: `permanently translate foreign texts, foreign worlds`,
+      book: "Habermas A Biography",
+    },
+    {
+      word: "Fortschritt",
+      sentence: `The "third ear" of every self-respecting analyst should perk up at the 
+      mention of Fortschritt, for, as Freud taught us, there is no unambiguous 
+      progress in psychic life or in cultural history.`,
+      book: "Freud - An Intellectual Biography",
+    },
+    {
+      word: "frangible",
+      sentence: `Long long long ago I stepped on a round stone in darkness and fell heavily at
+      the instant that automatic weapons' fire yellow-stitched the night where I 
+      had been standing six feet four inches tall and frangible.The "third ear" of every self-respecting analyst should perk up at the 
+      mention of Fortschritt, for, as Freud taught us, there is no unambiguous 
+      progress in psychic life or in cultural history.`,
+      book: "The Scarlett Ruse",
+    },
+    {
+      word: "fulsome",
+      sentence: `The praise was fulsome, the kind of acclaim that most authors work a 
+      lifetime to achieve.`,
+      book: "Mind At Play",
+    },
+    {
       word: "Geistigkeit",
       sentence: `was committed to "truth, order and justice," and, most importantly, 
       valorized Geistigkeit, spirituality or intellectuality, over Sinnlichkeit, 
