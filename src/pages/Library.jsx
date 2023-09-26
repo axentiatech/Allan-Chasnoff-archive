@@ -204,7 +204,7 @@ export default function Library() {
                       >
                         <img
                           // src={"/thumbnails/" + (id + 1) + ".png"}
-                          src="thumbnailplace.png"
+                          src={`${data.src}`}
                           style={{
                             width: windowWidth < 900 ? "8vw" : "4vw",
                           }}
