@@ -26,9 +26,9 @@ export default function Library() {
 
   const [books, setBooks] = useState(booksData);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   useEffect(() => {
     const handleResize = () => {
