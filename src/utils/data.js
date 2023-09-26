@@ -52,52 +52,52 @@ export const booksData = [
   {
     name: "Seven Types of Ambiguity",
     author: "William Empson",
-    src: "/thumbnails/1.png"
+    src: "/thumbnails/11.png"
   },
   {
     name: "Theft",
     author: "James Boyle",
-    src: "/thumbnails/2.png"
+    src: "/thumbnails/12.png"
   },
   {
     name: "Shanzhai Deconstruction in Chinese",
     author: "Byung-Chul Han",
-    src: "/thumbnails/3.png"
+    src: "/thumbnails/13.png"
   },
   {
     name: "Picasso and the Painting That Shocked the World",
     author: "Miles Unger",
-    src: "/thumbnails/4.png"
+    src: "/thumbnails/14.png"
   },
   {
     name: "Becoming Myself",
     author: "Irvin D. Yalom",
-    src: "/thumbnails/5.png"
+    src: "/thumbnails/15.png"
   },
   {
     name: "On Liberty",
     author: "JS Mill",
-    src: "/thumbnails/6.png"
+    src: "/thumbnails/16.png"
   },
   {
     name: "An open letter to H Arendt",
     author: "zarembyj",
-    src: "/thumbnails/7.png"
+    src: "/thumbnails/17.png"
   },
   {
     name: "Bard Pres response to.com",
     author: "zarembyj",
-    src: "/thumbnails/8.png"
+    src: "/thumbnails/18.png"
   },
   {
     name: "Areopagitica",
     author: "zarembyj",
-    src: "/thumbnails/9.png"
+    src: "/thumbnails/19.png"
   },
   {
     name: "Fuji GFX Manual",
     author: "FUJIFILM Corporation",
-    src: "/thumbnails/10.png"
+    src: "/thumbnails/20.png"
   }
 
 
