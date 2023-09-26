@@ -1564,7 +1564,7 @@ export const words = [
 {
   word: "pessary.",
   book: "Freud In His Time and Ours",
-  sentence: "Sophie rejected the destiny of her mother and grandmother. After the birth of two sons, dreading the prospect of another pregnancy, she sought her father's advice; Freud recommended that she resort to contraception by using a \"pessary.\"15
+  sentence: `Sophie rejected the destiny of her mother and grandmother. After the birth of two sons, dreading the prospect of another pregnancy, she sought her father's advice; Freud recommended that she resort to contraception by using a \"pessary.\"`
 },
 {
   word: "phalansteries",
@@ -1594,7 +1594,7 @@ export const words = [
 {
   word: "phronimos",
   book: "Freud - An Intellectual Biography",
-  sentence: 
+  sentence: `Like an Aristotelian phronimos, a man of practical reason, Charcot would perceive the universal "type" as he called it in the particular.`
 },
 {
   word: "phthisis",
