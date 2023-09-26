@@ -1179,7 +1179,7 @@ export const words = [
   word: "incunable",
   sentence: "not to Pope Paul IV, who started the Index of Prohibited Books during the so· called incunable era following the advent of movable type;",
   author: "Palimpsest",
-}
+},
 {
   word: "ineluctable",
   sentence: "are the wanderings of a way of thinking that is faithful and attentive to the ineluctable world of the future which proclaims itself at present, beyond the barriers of knowledge.",
