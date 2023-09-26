@@ -1178,51 +1178,51 @@ export const words = [
 {
   word: "incunable",
   sentence: "not to Pope Paul IV, who started the Index of Prohibited Books during the so· called incunable era following the advent of movable type;",
-  author: "Palimpsest",
+  book: "Palimpsest",
 },
 {
   word: "ineluctable",
   sentence: "are the wanderings of a way of thinking that is faithful and attentive to the ineluctable world of the future which proclaims itself at present, beyond the barriers of knowledge.",
-  author: "Cultural Graphology",        
+  book: "Cultural Graphology",        
 },
 {
   word: "instauration",
   sentence: "After Descartes's instauration of the cogito at the dawn of modern philosophy-that",
-  author: "Walther Benjamin A Critical Life",
+  book: "Walther Benjamin A Critical Life",
 },
 {
   word: "interdictive",
   sentence: "An instinctual id, buried in the ruins of an ancestral genealogy; an interdictive superego, symbolizing an inaccessible happiness; and an ego divided between memory and history.",
-  author: "Freud In His Time and Ours",
+  book: "Freud In His Time and Ours",
 },
 {
   word: "interlocutor",
   sentence: "Strictly speaking, they may not have been Lufimenschen, but none of them possessed the education or Building to serve as an adequate interlocutor for Freud, much less the kind of intellectual firepower Fliess had that had generated so much intellectual excitement in the 1890s.",
-  author: "Freud - An Intellectual Biography",
+  book: "Freud - An Intellectual Biography",
 },
 {
   word: "interlocutors",
   sentence: `this "Aristophanesque" farce, the writer created a satire out of the illusion personified by a naive young woman who was sowing discord among her interlocutors.`,
-  author: "Freud In His Time and Ours",
+  book: "Freud In His Time and Ours",
 },
 {
   word: "intermezzo",
   sentence: "following his two terms in G6ttingen and his intermezzo in Zurich,",
-  author: "Habermas A Biography",
+  book: "Habermas A Biography",
 },
 {
   word: "irredentists",
   sentence: "Very similar to the Viennese of the Belle Epoque, the Triestine intellectuals saw themselves as irredentists.",
-  author: "Freud In His Time and Ours",
+  book: "Freud In His Time and Ours",
 },
 {
   word: "irremissible",
   sentence: `"Freud was closed off to music," that in fact he "had a 'total, irremissible occlusion to it." Rolland, Fisher reports, was "troubled ... by this piece of information."`,
-  author: "Freud - An Intellectual Biography",
+  book: "Freud - An Intellectual Biography",
 },
 {
   word: "kairos",
   sentence: "and Derrida is the knowledge of this urgency and of this time, this kairos.",        
-  author: "Reading Derrida's of Grammatology",
+  book: "Reading Derrida's of Grammatology",
 },
 ];
