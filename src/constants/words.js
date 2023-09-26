@@ -1225,4 +1225,1086 @@ export const words = [
   sentence: "and Derrida is the knowledge of this urgency and of this time, this kairos.",        
   book: "Reading Derrida's of Grammatology",
 },
+{
+  word: "keeners",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "The women below had been keeners for the dead child but had not wanted to miss the unusual spectacle of a motorboat's arrival on the beach."
+},
+{
+  word: "Kinderfrau",
+  book: "Freud - An Intellectual Biography",
+  sentence: "One must ask: Did he refind his Kind.erfrau in his daughter?"
+
+},
+{
+  word: "Koine",
+  book: "Palimpsest",
+  sentence: "but they're united not only by their canonical enjambment and their subject matter but by language-specifically, the Koine Greek of the Hellenistic world in the Roman era."
+},
+{
+  word: "labile",
+  book: "Freud - An Intellectual Biography",
+  sentence: "It was as if all the labile emotionality that Freud had tried to repress since the Gisela affair now confronted him in the boulevards of Paris."
+},
+{
+  word: "lectionary",
+  book: "Palimpsest",
+  sentence: "if a psalter, he placed his hands on his head in the shape of a crown (in reference to King David); if a lectionary, he pretended to wipe away the grease"
+},
+{
+  word: "lector",
+  book: "Barthes A Biography",
+  sentence: "where Barthes gave a few French classes as lector),"
+},
+{
+  word: "legato",
+  book: "Barthes A Biography",
+  sentence: "To do so, he distinguishes between pronunciation, which maintains continuity, legato and line, and articulation, which gives the same phonic intensity to each consonant in accordance with a logic of expressivity a logic that is 'highly ideological'."
+},
+{
+  word: "leukoplakia",
+  book: "Freud In His Time and Ours",
+  sentence: "Rather than give up tobacco, he preferred to think that he was suffering from a simple leukoplakia.57"
+},
+{
+  word: "libertinage",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "and especially with his former companion in libertinage, Franz Hessel,"
+},
+{
+  word: "Limbo",
+  book: "Barthes A Biography",
+  sentence: "As a Limbo of the Text, the journal's value lies in its continuing to be a form that has not been fixed."
+},
+{
+  word: "limen",
+  book: "Reading Derrida's of Grammatology",
+  sentence: "Derrida is here writing, once again and still, about the limen between nature and society in the 'Essai', and between the 'Essai' and the Discours in Rousseau's thought."
+},
+{
+  word: "litotes",
+  book: "Derrida A Biography",
+  sentence: "I invented a Diderot who was a virtuoso of litotes, a maverick of literature, a resistance fighter from the word go."
+},
+{
+  word: "loggia",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "and in the first section of Berlin Childhood around 1900, the child dwells in his loggia ... as in a mausoleum long intended just for him\""
+},
+{
+  word: "macrocephalic",
+  book: "The Scarlett Ruse",
+  sentence: "She had a massive, jut./' ting. macrocephalic jaw."
+},
+{
+  word: "Magisterium",
+  book: "Palimpsest",
+  sentence: "The Magisterium of Writing"
+},
+{
+  word: "majuscules",
+  book: "Palimpsest",
+  sentence: "From these they took their majuscules, the square-limbed capitals inscribed on foundation stones and triumphal arches, and adapted the bipedal-looking serifs they found on the Roman capitals to all the letters, big and small, giving them a flowing, unified character."
+},
+{
+  word: "mana",
+  book: "Freud - An Intellectual Biography",
+  sentence: "we will see, Freud later became convinced that he lacked the physicianly mana to elicit his patients' transferences, which are a necessary condition for clinical success."
+},
+{
+  word: "mandarin",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "It was Kracauer, then, who showed Benjamin how a theory apparently suited only to the refractory objects of a mandarin cultural elite might open up the world around him."
+},
+{
+  word: "manifold",
+  book: "Freud - An Intellectual Biography",
+  sentence: "The lVaturphilosophen maintained that nature was not a lifeless, mechanistic manifold but was animated by a life force an elan Vila"
+},
+{
+  word: "mantic",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "When Scholem mentioned \"mantic disciplines\" as an example of such experience, Benjamin replied: \"A philosophy that does not include the possibility of soothsaying from coffee grounds ... cannot be a true philosophy\""
+},
+{
+  word: "memsahib",
+  book: "Theory of Literature",
+  sentence: "The subaltern self-confidence and memsahib insecurity that are effected by the exercise of double consciousness is not an actual exchange of roles;"
+},
+{
+  word: "message",
+  book: "Theory of Literature",
+  sentence: "thrust of the message is toward the addressee. A small child is going out the door without her coat on, and her mother or father says,"
+},
+{
+  word: "metaphor",
+  book: "Theory of Literature",
+  sentence: "is the distinction between metaphor, which unifies, synthesizes, and brings together, and metonymy, which makes one sign contiguous with another but makes no claim to unify or establish identity."
+},
+{
+  word: "metier",
+  book: "Freud - An Intellectual Biography",
+  sentence: "He was in fact busy establishing himself in a metier that did not address the urgent personal questions that his No.2 Self posed to him,"
+},
+{
+  word: "metonymy",
+  book: "Theory of Literature",
+  sentence: "Condensation works metaphorically and displacement works metonymically. Metonymy is the delay or perpetual difference of signification. Metaphor is the gathering up in a crystalline moment of the desire that's attempting to articulate itself along a plot line."
+},
+{
+  word: "minuscule",
+  book: "Palimpsest",
+  sentence: "The new scribal hand that emerged from Alcuin's school, Carolingian minuscule,"
+},
+{
+  word: "misalliance",
+  book: "Freud - An Intellectual Biography",
+  sentence: "How, one wonders, could such an obvious misalliance have come about in the first place?"
+},
+{
+  word: "mise en scene",
+  book: "Barthes A Biography",
+  sentence: "and: 'Much of the information provided by the text about costumes, the mise en scene, all the relevant suggestions"
+},
+{
+  word: "misprision",
+  book: "Palimpsest",
+  sentence: "Duncan-all trace inspiration from the compounding, productive misprision of Fenollosa and Pound."
+},
+{
+  word: "MitHiufer",
+  book: "Habermas A Biography",
+  sentence: "This brought him to Wolfgang Abendroth, the 'partisan professor'8o in the country of the 'MitHiufer',· and"
+},
+{
+  word: "moieties",
+  book: "Theory of Literature",
+  sentence: "solve the contradictions inherent in hierarchy by the exchange of moieties: the kinship gifts) wedding gifts, and so on that Levi-Strauss discusses."
+},
+{
+  word: "mooted",
+  book: "Derrida A Biography",
+  sentence: "The idea of a third conference on his work had been mooted by Edith Heurgon and Jean Ricardou in 1993."
+},
+{
+  word: "mortification",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "criticism as \"the mortification of works.\""
+},
+{
+  word: "motivic",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "and he was convinced that the knowledge to which this motivic Method gave access, knowledge of present and past in light of each other, could not be recuperated through any amount of abstract theorizing."
+},
+{
+  word: "mystagogues",
+  book: "Habermas A Biography",
+  sentence: "those who glorified war against those who were skeptical towards war, mystagogues of the Reich against political realists, those who defended the thesis of a German 'Sonderweg'· against self-critical pragmatists, religious socialists against orthodox Lutherans,"
+},
+{
+  word: "mythopoeic",
+  book: "Palimpsest",
+  sentence: "trading oral language's mythopoeic effusion,"
+},
+{
+  word: "naturalism",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "Benjamin expounds a naturalism whose works far ex~ ceed the theories on which they seem to be based."
+},
+{
+  word: "necrosis",
+  book: "Freud In His Time and Ours",
+  sentence: "the necrosis of the bone in her nose was irreversible."
+},
+{
+  word: "neo",
+  book: "Palimpsest",
+  sentence: "It's been widely observed that in many ways, many characteristics of humans evolved by degrees of infantilization. Called neoteny, this lengthened juvenile phase allows us to behave childishly as long as possible, extending our cognitive and social powers into far-flung realms."
+},
+{
+  word: "neoteny",
+  book: "Palimpsest",
+  sentence: "And here, perhaps, the neoteny we find among the Paleolithic artists comes into play."
+},
+{
+  word: "neurasthenia",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "His neurasthenia, however, was the least of his problems."
+},
+{
+  word: "noetic",
+  book: "Freud - An Intellectual Biography",
+  sentence: "Freud fails to acknowledge the existence and value of \"a noetic element above and beyond reason,\""
+},
+{
+  word: "nosography",
+  book: "Freud In His Time and Ours",
+  sentence: `Concerned with hygienics, nosography, and the description of "aberrations," the major sexologists of the late nineteenth century-Krafft-Ebing, Albert Moll, and Havelock Ellis-were less preoccupied with therapeutics than with erudite research into the various forms of sexual practices and identities: homosexuality, bisexuality, transvestism, pedophilia, zoophilia, and so on.`
+},
+{
+  word: "numinous",
+  book: "Palimpsest",
+  sentence: "Thinking that he perceived manifestations of the numinous in every conceivable natural phenomenon, Goethe became entrapped in what Benjamin calls the \"chaos of symbols\""
+},
+{
+  word: "occlusion",
+  book: "Freud - An Intellectual Biography",
+  sentence: `\"Freud was closed off to music,\" that in fact he \"had a 'total, irremissible occlusion to it.\"`
+},
+{
+  word: "omnivory",
+  book: "A Mind At Play",
+  sentence: "and so is the information omnivory by which we define ourselves as modern."
+},
+{
+  word: "oneiric",
+  book: "Freud In His Time and Ours",
+  sentence: "others emphasized that oneiric activity served as a spontaneous remedy for the disorders of subjects suffering from perversions."
+},
+{
+  word: "ordoliberalism",
+  book: "Habermas A Biography",
+  sentence: "his father handed him literature on political economy by representatives of the school of ordoliberalism and recommended to him books by proponents of the free market,"
+},
+{
+  word: "organon",
+  book: "Freud - An Intellectual Biography",
+  sentence: "or Aristotle, who produced the first organon of rational thought?87"
+},
+{
+  word: "ostensive",
+  book: "Palimpsest",
+  sentence: "Already with this notion, we're moving beyond the mimetic and into the semiographic, emphasizing the ostensive, symbol-making possibilities of the graphic in parity with the pictorial."
+},
+{
+  word: "otorhinolaryngologist",
+  book: "Freud In His Time and Ours",
+  sentence: "Instead, he turned to Marcus Hajek, an otorhinolaryngologist, certain that Hajek would reassure him completely."
+},
+{
+  word: "paladins",
+  book: "Freud In His Time and Ours",
+  sentence: "These men, who did not yet practice psychoanalytic treatments, often compared themselves to paladins."
+},
+{
+  word: "palanquin",
+  book: "In Praise of Shadows",
+  sentence: "A WOlnan of the middle or upper ranks of society seldom left her house, and when she did she shielded herself from the gaze of the public in the dark recesses of her palanquin."
+},
+{
+  word: "palinode",
+  book: "Palimpsest",
+  sentence: "Like the related genre of poetry called the palinode, in which the poet recants but cannot ever wholly efface some prior opinion, the palimpsest is evidence that there is no true erasure."
+},
+{
+  word: "panentheistic",
+  book: "The Talmud",
+  sentence: "As far as he was concerned their panentheistic belief that God was in everything conflicted with the traditional view of both the Talmud and the kabbalah."
+},
+{
+  word: "paralipomena",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `Benjamin admits as much with a philosophical shrug: \"To be sure, ... but what more can there ever be than prolegomena and paralipomena?\"`
+},
+{
+  word: "parapraxis",
+  book: "Freud's Trip to Orvieto",
+  sentence: "The folderol about the impossibility of bringing the name Signorelli to the conscious part of his mind was like the parapraxis itself: an obfuscation."
+},
+{
+  word: "parasitizes",
+  book: "Palimpsest",
+  sentence: "One of writing's great achievements is that, like the languages it encodes or completes or parasitizes, it manages to be extensible:"
+},
+{
+  word: "pareidolia",
+  book: "Palimpsest",
+  sentence: "The imputation of fundamental topological unity across sign systems seems instead"
+},
+{
+  word: "paronomasia",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "The dynamic extends even to the texture of Benjamin's language, which, in the effort to articulate the convolution of dimensions, employs a philosophical paronomasia that sometimes verges on mannerism:"
+},
+{
+  word: "pasigraphy",
+  book: "Freud - An Intellectual Biography",
+  sentence: "where the Freuds would live for forty-five years, and where their paterfamilias would produce most of his work."
+},
+{
+  word: "paterfamilias",
+  book: "Freud - An Intellectual Biography",
+  sentence: "where the Freuds would live for forty-five years, and where their paterfamilias would produce most of his work."
+},
+{
+  word: "peplum",
+  book: "Barthes A Biography",
+  sentence: "Studio which turn actors into useless gods, and the peplum and its mongrel signs that confuse signs with their signified."
+},
+{
+  word: "pericope",
+  book: "Palimpsest",
+  sentence: "stories-not yet collected as books in Paul's time but still an oral tradition of sayings and pericopes, or particles of narrative-and"
+},
+{
+  word: "perorations",
+  book: "Freud - An Intellectual Biography",
+  sentence: "But after Freud interpreted jung's perorations on some recently discovered prehistoric corpses as an expression of death wishes directed toward him, he passed out forthwith."
+},
+{
+  word: "perse",
+  book: "Derrida A Biography",
+  sentence: "Some apparent, clearly demarcated silences, some indifferent perse- verances, on another ground, can sometimes be more effective, more intimidating.4"
+},
+{
+  word: "perseverating",
+  book: "Freud - An Intellectual Biography",
+  sentence: "Instead of perseverating over those limitations,"
+},
+{
+  word: "pessary.",
+  book: "Freud In His Time and Ours",
+  sentence: "Sophie rejected the destiny of her mother and grandmother. After the birth of two sons, dreading the prospect of another pregnancy, she sought her father's advice; Freud recommended that she resort to contraception by using a \"pessary.\"15
+},
+{
+  word: "phalansteries",
+  book: "Walther Benjamin A Critical Life",
+  sentence: "Paris's railroad stations, Fourier's phalansteries, Daguerre's panorama, and the barricades themselves-all"
+},
+{
+  word: "phalanstery",
+  book: "Barthes A Biography",
+  sentence: "Medical centers provided an alternative to the social life, one which Barthes grew used to and reflected upon: 'and while other diseases dissocialized, tuberculosis projected you into a minor ethnographic society, part tribe, part monastery, part phalanstery: rites, constraints, protections'"
+},
+{
+  word: "phantasmagoria",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `For Benjamin in the thirties, the world in which we live has the character of an optical device: a \"phantasmagoria.\" Originally an eighteenth- century illusionistic device, with which shadows of moving figures were projected onto a wall or screen, phantasmagoria in Benjamin is redefined to fit the world of urban commodity capitalism-an environment so pressingly \"real\" that we take it to be given and natural, when in fact it is a socioeconomic construct and, in the (Brechtian) language of the artwork essay, an \"apparatus.\"`
+},
+{
+  word: "phantasmic",
+  book: "Freud In His Time and Ours",
+  sentence: "This inequality, he said, did not exist in the unconscious: it is a phantasmic construction."
+},
+{
+  word: "phatic",
+  book: "Theory of Literature",
+  sentence: "There is, just for example, what Jakobson calls the \"set to the contact\" or phatic function."
+},
+{
+  word: "phronimos",
+  book: "Freud - An Intellectual Biography",
+  sentence: 
+},
+{
+  word: "phthisis",
+  book: "Barthes A Biography",
+  sentence: `'the dreams and fears of a society find a major means of expression in phthisis'.46`
+},
+{
+  word: "physiognomy",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `Given the long-standing affinities between the work of Kracauer and of Benjamin, it could not have been surprising that Kracauer envisioned a physiognomy of a cultural era: the book diagnoses Offenbach's operettas as at once symptomatic of the pomp and superficiality of the reign of Napoleon III and suggestive of uto- pian resistance to that regime.`
+},
+{
+  word: "physis",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `The essay itself begins and ends with images of technology or, more precisely, of the interpenetration of human bodily and technological forces in a new organized physis.`
+},
+{
+  word: "picaresque",
+  book: "Theory of Literature",
+  sentence: `I've said that this plot is picaresque.`
+},
+{
+  word: "pietist",
+  book: "Freud In His Time and Ours",
+  sentence: `A Lutheran and a pietist, Heinrich had been Emil Kraepelin's assistant before he took an interest in hypnosis and then adopted the theses of Alfred Adler's individual psychology.`
+},
+{
+  word: "plenary",
+  book: "Habermas A Biography",
+  sentence: `he spoke alongside the famous American sociologist Talcott Parsons in a plenary session chaired by Horkheimer.`
+},
+{
+  word: "plenum-like",
+  book: "Freud - An Intellectual Biography",
+  sentence: `It is in fact shot through with contradictions that correspond to numerous contradictions in Freud's thoroughly polytropic personality.`
+},
+{
+  word: "pleonastically",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `To inhabit in a certain deconstructive way which is to say, an ecographicaI, if not ecological, but let us say, somewhat pleonastically for the moment, a habitographicaI way may indeed mean something as obvious as opening an eye, as if upon waking from a long slumber.`
+},
+{
+  word: "plurivocity",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `It is as if the \Vestem concept of language (in terms of what, beyond its pluviosity and beyond the strict and problematic opposition of speech [parole] and language (langue], attaches it in general to phonematic or glossematic production, to language, to voice, to hearing, to sound and breadth, to speech) were revealed today as the guise or disguise of a primary \\'riting:`
+},
+{
+  word: "polytropic",
+  book: "Freud - An Intellectual Biography",
+  sentence: `We will have ample opportunity to see that Freud, like Odysseus, was polytropos.26`
+},
+{
+  word: "polytropos.26",
+  book: "Freud - An Intellectual Biography",
+  sentence: `\\Ve will have ample opportunity to see that Freud, like Odysseus, was polytropos.26`
+},
+{
+  word: "predication",
+  book: "Theory of Literature",
+  sentence: "In the grammatical sense, this word is the means or principal of predication whereby we say one thing is another thing: a mare is a female horse, for example."
+},
+{
+  word: "prelapsar",
+  book: "Palimpsest",
+  sentence: `With writing's advent, language ends its prelapsarian phase,`
+},
+{
+  word: "prelapsarian",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `attributed to Goethe the notion that only art can capture scattered images of a "true nature" once present in a prelapsarian world but sub- sequently hidden and fragmented-what Benjamin there calls "a limited, harmonic discontinuum"`
+},
+{
+  word: "premonitory",
+  book: "Derrida A Biography",
+  sentence: `Derrida evoked in premonitory terms 'the end of the book', before introducing the concept of 'grammatology', or the science of writing.`
+},
+{
+  word: "presentiment",
+  book: "Cultural Graphology",
+  sentence: `he was, nevertheless, the conscious architect of presentiment as a`
+},
+{
+  word: "presentiment",
+  book: "Cultural Graphology",
+  sentence: `but as I know from my own reading of Derrida, presentiment is something other than this: it is the experience of being bound and freed by a powerful text.`
+},
+{
+  word: "presentiment",
+  book: "Cultural Graphology",
+  sentence: `Still, presentiment is more than a theory of drama, and even to call it the single theme of literature would be to straiten it, for it is the burden and mood of writing itself, a name for its propensity to look forward as well as back: "it is because writing is inaugural, in the primal sense of the word, that it is dangerous and anguishing.`
+},
+{
+  word: "privative",
+  book: "Palimpsest",
+  sentence: `And it hasn't always been illicit or criminal; the privative power of walls is not evenly distributed among civilized cultures.`
+},
+{
+  word: "prodromal",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Freud turns to the prodromal phenomena that preceded the newly elected Senatspriisident's collapse.`
+},
+{
+  word: "programmatic",
+  book: "Habermas A Biography",
+  sentence: `from the years 1932 to 1941 were stored away5 the journal that was programmatic for the original conception of Critical Theory. However, Habermas was not going`
+},
+{
+  word: "Prolegomenon",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `Richard Klein's 'Prolegomenon to Derrida' was addressed to an audience that was already familiar with 'the monstrous difficulties of reading Derrida'`
+},
+{
+  word: "prolepsis",
+  book: "Theory of Literature",
+  sentence: `Quite a bit of this lecture consists in preliminaries, yet like the rhetorical device called "prolepsis" in literary texts, they are preliminaries that cover for the first time topics to be revisited later.`
+},
+{
+  word: "proleptic",
+  book: "Theory of Literature",
+  sentence: `I am conscious, however, that there are certain recently influential names and ideas that the syllabus did not stretch to cover, although here and there some oblique or proleptic mention of these trends will be found.`
+},
+{
+  word: "proleptically",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `therefore gesture proleptically to the reading of Levi-Strauss in the second part of Of Grammatology,`
+},
+{
+  word: "promoterism",
+  book: "Habermas A Biography",
+  sentence: `Literality 'time of the founders', sometimes referred to as the 'period of pro modernism's phase of rapid industrial development in Germany following the Franco-Prussian War in 1870-1.`
+},
+{
+  word: "propaedeutic",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `His 1929 essay "Surreal- ism" underscores the propaedeutic function of intoxicants in achieving a "profane illumination" of the revolutionary energies slumbering in the world of everyday things,`
+},
+{
+  word: "prosody",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `that I spent many years doing research (on Elizabethan poetry and questions of prosody) before I started to take a serious interest in Derrida,`
+},
+{
+  word: "prosopopoeia",
+  book: "Theory of Literature",
+  sentence: `and de Man himself turns also to allegory, irony, and prosopopoeia), but`
+},
+{
+  word: "protention",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `on the basis of the history of the possibilities of the trace as unity of the double movement of protention and retention.`
+},
+{
+  word: "pseudepigraphic",
+  book: "The Talmud",
+  sentence: `The alleged reference in the pseudepigraphic work Testament of the Tribes (Testament of Benjamin 3.8) is almost certainly a later Christian interpolation.`
+},
+{
+  word: "publican",
+  book: "Habermas A Biography",
+  sentence: `which was run by her parents, the master brewer and publican Julius Kottgen (1958-1936) and his second wife,`
+},
+{
+  word: "putative",
+  book: "Philology and Its Histories",
+  sentence: `The repetitive event of the literary text both dates and un-dates itself: it marks itself as historical-no text is written in some timeless and universal language-but by the same token it cannot be contained by its putative moment of production, even if we thought we could isolate it.`
+},
+{
+  word: "putatively",
+  book: "Palimpsest",
+  sentence: `sophisticated and cognitively demanding to knit itself securely into our quotidian`
+},
+{
+  word: "quadriga",
+  book: "Habermas A Biography",
+  sentence: `The message of the portrait that this is the quadriga of Critical Theory can only be taken ironically.`
+},
+{
+  word: "quasi-phalanstery",
+  book: "Derrida A Biography",
+  sentence: `Inspired by the idea of utopia, this quasi-phalanstery was considered by many Strasbourgeois as a decidedly subversive place: the spirit of '68 continued to mix every- thing together,`
+},
+{
+  word: "quiddity",
+  book: "Palimpsest",
+  sentence: `They seemed less symbols or servants than companions crowding into the space of the screen, claiming a life of their own from electricity and the black-boxed quiddity of the system.`
+},
+{
+  word: "quondam",
+  book: "Goebbels",
+  sentence: `The last station of his journey was Istanbul, where in addition to the usual sights he visited a German military cemetery and brooded over the quondam greatness of the Ottoman Empire.`
+},
+{
+  word: "quotidian",
+  book: "Palimpsest",
+  sentence: `These fortune-telling rituals required that questions be engraved into the scapula of an ox or the ventral shell (or plastron) of a tortoise, then laid in a fire or pressed with hot pokers, the bony material cracked in patterns connecting and cleaving the written message.`
+},
+{
+  word: "redemption",
+  book: "Freud In His Time and Ours",
+  sentence: `by introducing the idea of redemption, he managed to ward off the specter of human guilt but at the price of contradicting the idea that the Jews were the chosen people.`
+},
+{
+  word: "repoussoir",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `it is in large part a repoussoir, a perspective device allowing Baudelaire, and Benjamin with him, "to fathom the full meaning of the breakdown which he, as a modern man, was witnessing."`
+},
+{
+  word: "reprise",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `occasioning a reprise, no doubt, of their awkward dance around Asja in Moscow.`
+},
+{
+  word: "rhapsodic",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `This subtitle suggests the rhapsodic character of the presentation as I then conceived it.`
+},
+{
+  word: "rituals",
+  book: "Palimpsest",
+  sentence: `These fortune-telling rituals required that questions be engraved into the scapula of an ox or the ventral shell (or plastron) of a tortoise, then laid in a fire or pressed with hot pokers, the bony material cracked in patterns connecting and cleaving the written message.`
+},
+{
+  word: "rut",
+  book: "Palimpsest",
+  sentence: `flicking tails and open mouths characterize animals in rut or courtship.`
+},
+{
+  word: "saturnalia",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `where Derrida evokes a quasi-Hegelian saturnalia - a saturnalia that cannot be contained by Rousseau's chaste festival-`
+},
+{
+  word: "scapulimancy",
+  book: "Palimpsest",
+  sentence: `The earliest Chinese writing, the "oracle bone script" of the late Bronze Age's Shang dynasty (as early as the fourteenth century BeE), also called "shell and bone" script, was used in divinatory practices now called scapulimancy, pyromancy, and plastromancy.`
+},
+{
+  word: "scotomization",
+  book: "Freud In His Time and Ours",
+  sentence: `Two years later, in an exchange of letters with Rene Laforgue on the question of scotomization, Freud forcefully reasserted his choice of the termnial H JJ deto characterize this defense mechanism,`
+},
+{
+  word: "scried",
+  book: "Palimpsest",
+  sentence: `he scried a fable of writing systems`
+},
+{
+  word: "shambling",
+  book: "Freud's Trip to Orvieto",
+  sentence: `been no shambling about the truth-that`
+},
+{
+  word: "sheaves",
+  book: "Theory of Literature",
+  sentence: `"His sheaves were neither miserly nor spiteful."`
+},
+{
+  word: "sigil",
+  book: "Palimpsest",
+  sentence: `Such sighs featured in early writing systems like cuneiform and the systems that arose from Egyptian hieroglyphs, to differentiate homophonic words;`
+},
+{
+  word: "simulation",
+  book: "Freud In His Time and Ours",
+  sentence: `In other words, once again, Freud nullified the notion of simulation: one simulates only what one is. Wagner Jauregg, for his part, could not accept being defended in this way by a man he admired but whose reasoning he rejected. He did not accept either the idea that simulation was a neurosis or the principle according to which a psychiatrist, in wartime, ought to put himself at the exclusive service of the patient. He was acquitted nevertheless. Freud had made the error of positing a diagnosis of neurosis without taking an interest in Kauders. And yet the lieutenant had much in common with a good number of his peers. He had had`
+},
+{
+  word: "Sinnlichkeit",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Let us not forget that Freud experienced the Sinnlichkeit of Catholicism when he visited the churches of Freiberg, a city deeply devoted to the cult of the Madonna.`
+},
+{
+  word: "solecism",
+  book: "Freud In His Time and Ours",
+  sentence: `He was irritable; he committed one solecism after another; he told Jewish jokes to stave off anguish.`
+},
+{
+  word: "somatization",
+  book: "Freud - An Intellectual Biography",
+  sentence: `A conviction that he was unlovable despite the tremendous recognition he received, extreme separation anxiety and demandingness regarding his love objects, a craving for idealization, oral addictiveness, and a tendency to somatization were among them.`
+},
+{
+  word: "sonorities",
+  book: "Freud In His Time and Ours",
+  sentence: `He was a pure product of Viennese culture, a veritable Babel of sumptuous European sonorities.`
+},
+{
+  word: "sovereign",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Marx's conception of the selfsublation of philosophy into revolutionary practice?`
+},
+{
+  word: "speculum",
+  book: "Freud In His Time and Ours",
+  sentence: `Freud had already decided to seek out Hans Pichler, an Austrian stomatologist considered to be one of the greatest European specialists in maxillofacial surgery.`
+},
+{
+  word: "stochastic",
+  book: "A Mind At Play",
+  sentence: `probability-what physicists called "stochastic" processes?`
+},
+{
+  word: "stomatologist",
+  book: "Freud In His Time and Ours",
+  sentence: `Freud had already decided to seek out Hans Pichler, an Austrian stomatologist considered to be one of the greatest European specialists in maxillofacial surgery.`
+},
+{
+  word: "strabismus",
+  book: "Freud In His Time and Ours",
+  sentence: `Somber and taciturn, afflicted with a slight strabismus that contrasted with the regularity of his clean-shaven face,`
+},
+{
+  word: "strapline",
+  book: "Derrida A Biography",
+  sentence: `The strapline, though cheesy, was an effective draw: 'What if someone came along who changed not the way you think about every- thing, but everything about the way you think.'`
+},
+{
+  word: "strophes",
+  book: "Theory of Literature",
+  sentence: `Shelley's "Ode to the West Wind)) has five strophes, each exactly the same in form.`
+},
+{
+  word: "subaltern",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `"Only the notorious corks float to the surface, as for example the unspeakably dull and subaltern Kantorowicz,`
+},
+{
+  word: "sublating",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `He consistently couples the quest for truth with the project of sublating and mastering the banal and creaturely.`
+},
+{
+  word: "sublation",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `Adorno scrupulously avoids any suggestion of a gnostic sublation of modern conditions as a wholesale "phantasmagoria of hell."`
+},
+{
+  word: "suborn",
+  book: "Theory of Literature",
+  sentence: `proves that the apparatus Benjamin's theory supposes to be independent of the machinations of the culture industry can be and inevitably will be suborned by the culture industry for its own purposes.`
+},
+{
+  word: "subvention",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `he even managed to extract a small annual subvention from his parents by pro- ducing his copy of Hofmannsthal's letter.`
+},
+{
+  word: "summa",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `11 0n the Concept of History" stands more generally as a summa of Benja- min's thinking on history-a thinking that reaches back, through the arcades project, into the days following World War I. As`
+},
+{
+  word: "superannuate",
+  book: "Theory of Literature",
+  sentence: `[The mind of Europe is) a mind which changes, and that this change is a development which abandons nothing en route, which does not superannuate either Shakespeare, or Homer, or the rock drawing of the Magdalenian draftsmen.`
+},
+{
+  word: "superannuated",
+  book: "Derrida A Biography",
+  sentence: `called himself 'a superannuated cook of concepts'.`
+},
+{
+  word: "supervene",
+  book: "Freud - An Intellectual Biography",
+  sentence: `"It's an infection, but no matter. DysenterJI will supervene and the toxin will be eliminated."`
+},
+{
+  word: "supervenes",
+  book: "Of Grammatology",
+  sentence: `Undoubtedly it is not by chance that this ovenvhelming supervenes at the moment when the extension of the concept of language effaces all its limits.`
+},
+{
+  word: "symbiont",
+  book: "Palimpsest",
+  sentence: `This remarkable-and remarkably simple-capacity for writing to become a symbiont of the consciousness, for a craft so sophisticated and cognitively demanding to knit itself securely into our quotidian ways-is as responsible as its great utility for the ineluctable role it plays in modern life.`
+},
+{
+  word: "syncategoremes",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `The syncategoremes are coming loose here.`
+},
+{
+  word: "syndic",
+  book: "Habermas A Biography",
+  sentence: `Even before the Federal Republic was founded, he was able to take up his post as syndic again, which he held until his retirement.`
+},
+{
+  word: "tachycardia",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `Dr. Pierre Abrami diagnosed tachycardia, hypertension, and an enlarged heart-a`
+},
+{
+  word: "tagmeme",
+  book: "Theory of Literature",
+  sentence: `In other words, everything that organizes itself dispersively without a taproot is rhizomatic, no matter what.`
+},
+{
+  word: "tagmemic",
+  book: "Theory of Literature",
+  sentence: `Thus the differential association of signs in a system, no matter which constituent unit is chosen to constitute a sign in a given system, is tagmemic.`
+},
+{
+  word: "taproot",
+  book: "Theory of Literature",
+  sentence: `In other words, everything that organizes itself dispersively without a taproot is rhizomatic, no matter what.`
+},
+{
+  word: "telluric",
+  book: "Freud In His Time and Ours",
+  sentence: `"between the Titans, primordial divinities, and the gods of Olympus, conquerors of the ancient telluric forces;`
+},
+{
+  word: "tendentiously",
+  book: "Theory of Literature",
+  sentence: `moment-to understand the world realistically but not tendentiously.`
+},
+{
+  word: "teratology",
+  book: "Derrida A Biography",
+  sentence: `'this coupling of Russian avant-gardes and the French philosopher seems more to fall under teratology, or the science of monsters'.`
+},
+{
+  word: "terza",
+  book: "Theory of Literature",
+  sentence: `term to cover any and all constituent units: the tagmeme.`
+},
+{
+  word: "tesserae",
+  book: "Theory of Literature",
+  sentence: `In the mosaic of the text, the tesserae are the words.`
+},
+{
+  word: "testamentary",
+  book: "Derrida A Biography",
+  sentence: `Even if it does not take place, if it is not accepted, there is a testamentary desire that is part of the experience of death.36`
+},
+{
+  word: "thaumaturge",
+  book: "Freud In His Time and Ours",
+  sentence: `he was judged harshly by posterity as a fiend for numbers, a delirious thaumaturge,`
+},
+{
+  word: "thaumaturgic",
+  book: "Theory of Literature",
+  sentence: `In other words, everything that organizes itself dispersively without a taproot is rhizomatic, no matter what.`
+},
+{
+  word: "thaumaturgy",
+  book: "Freud - An Intellectual Biography",
+  sentence: `As he would later do with Fliess, the young scientist was seeking thaumaturgy; cocaine, so it seemed, was powdered magic.`
+},
+{
+  word: "theodicy",
+  book: "Freud - An Intellectual Biography",
+  sentence: `In addition to dismissing the Credo as irrational, Freud was interested in it because it is connected with the question of theodicy.`
+},
+{
+  word: "theologoumena",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Even though Freud was not a believer, he was fascinated by the Credo, which he considered a "theologoumenon," a theological opinion.`
+},
+{
+  word: "terza",
+  book: "Theory of Literature",
+  sentence: `term to cover any and all constituent units: the tagmeme.`
+},
+{
+  word: "tesserae",
+  book: "Theory of Literature",
+  sentence: `In the mosaic of the text, the tesserae are the words.`
+},
+{
+  word: "testamentary",
+  book: "Derrida A Biography",
+  sentence: `Even if it does not take place, if it is not accepted, there is a testamentary desire that is part of the experience of death.36`
+},
+{
+  word: "thaumaturge",
+  book: "Freud In His Time and Ours",
+  sentence: `he was judged harshly by posterity as a fiend for numbers, a delirious thaumaturge,`
+},
+{
+  word: "thaumaturgic",
+  book: "Theory of Literature",
+  sentence: `In other words, everything that organizes itself dispersively without a taproot is rhizomatic, no matter what.`
+},
+{
+  word: "thaumaturgy",
+  book: "Freud - An Intellectual Biography",
+  sentence: `As he would later do with Fliess, the young scientist was seeking thaumaturgy; cocaine, so it seemed, was powdered magic.`
+},
+{
+  word: "theodicy",
+  book: "Freud - An Intellectual Biography",
+  sentence: `In addition to dismissing the Credo as irrational, Freud was interested in it because it is connected with the question of theodicy.`
+},
+{
+  word: "theologoumena",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Even though Freud was not a believer, he was fascinated by the Credo, which he considered a "theologoumenon," a theological opinion.`
+},
+{
+  word: "theosophist",
+  book: "Freud In His Time and Ours",
+  sentence: `Jung saw himself as a theosophist in search of a differential ontology of the psyche.`
+},
+{
+  word: "thetic",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `These words will figure crucially three years later in the thetic essay 11 0n the Concept of History."`
+},
+{
+  word: "topology",
+  book: "Palimpsest",
+  sentence: `But is topology significant? Are we somehow "tuned" to be especially discriminating about topological arrangements?`
+},
+{
+  word: "toponymy",
+  book: "Derrida A Biography",
+  sentence: `In this hypothesis, America would be the proper name of deconstruction in progress, its family name, its toponymy, its language and its place, its principal residence.'8`
+},
+{
+  word: "tout",
+  book: "Barthes A Biography",
+  sentence: `Nothing, not even life provisional in these places and indeed provisional tout court as led by these young women and young men placed in different buildings`
+},
+{
+  word: "tractate",
+  book: "The Talmud",
+  sentence: `References to the Babylonian Talmud are tractate and page only, the prefixes M and J before a tractate name refer to the Mishnah and Jerusalem Talmud respectively.`
+},
+{
+  word: "tranche",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `These words will figure crucially three years later in the thetic essay 11 0n the Concept of History."`
+},
+{
+  word: "transcription",
+  book: "Palimpsest",
+  sentence: `Yet in the interest of expanding literacy, he even considered turning to Romanization-the transcription of Chinese words into alphabetic characters, which is used frequently in Western contexts by students of the Chinese language-to extend the reach of written language to peasants and others long denied access to literacy by the imperial system.`
+},
+{
+  word: "transitivity",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `The awakening of writing, /'eveil de l'ecriture, has thus a transitivity, which Derrida again conveys and even more clearly with his own striking image that 'opens an eye at the centre of language'.`
+},
+{
+  word: "transvaluation",
+  book: "Theory of Literature",
+  sentence: `Again there is a common ground, a shared sense of the centrality of sexual conduct to human life; and what gets reflected in the conflict of generations on this topic is an inversion of values, not a new set of values exactly but a simple transvaluation of the values that exist.`
+},
+{
+  word: "Trauerarbeit",
+  book: "Freud - An Intellectual Biography",
+  sentence: `By 1900, however, as a result of his Trauerarbeit, self-analysis, separation from Fliess, and completion of The interpretation oj dreams a work that he described as a "reaction to his father's death" and "a portion of my own self-analysis" Freud's creative illness terminated in a way that closely approximates Ellenberger's ideal-typical description of the phenomenon.126`
+},
+{
+  word: "traveled",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `Benjamin traveled by auto from Poveromo back to Germany in mid-November with Wilhelm Speyer at the wheel.`
+},
+{
+  word: "tuition",
+  book: "Theory of Literature",
+  sentence: `an avatar of the notion in the late nineteenth century that everything was going to hell in a handbasket.`
+},
+
+{
+  word: "turpitude",
+  book: "Freud In His Time and Ours",
+  sentence: `He was a pure product of Viennese culture, a veritable Babel of sumptuous European sonorities.`
+},
+{
+  word: "tutelary",
+  book: "Freud In His Time and Ours",
+  sentence: `He was a pure product of Viennese culture, a veritable Babel of sumptuous European sonorities.`
+},
+{
+  word: "ultramontane",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `son of the editor of the ultramontane Catholic newspaper Freiburger Boten:`
+},
+{
+  word: "uncial",
+  book: "Palimpsest",
+  sentence: `Another fragment lists wrestling holds in «careful and rather large uncial writing," a sign of the writer's lack of scribal expertise.`
+},
+{
+  word: "Urpiziinomen",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Love can be viewed as a Goethean Urpiziinomen, that is, a particular phenomenon, which, if investigated properly, reveals universal truths about nature.`
+},
+{
+  word: "usufructors",
+  book: "Karl Marx",
+  sentence: `They are just its possessors, its usufructors and, as good family fathers, have to pass it on to following generations in an improved condition.48`
+},
+{
+  word: "valency",
+  book: "Theory of Literature",
+  sentence: `History is an important way of understanding the valency of certain kinds of utterance at certain times.`
+},
+{
+  word: "variorum",
+  book: "Theory of Literature",
+  sentence: `A scholarly edition-and McGann's main object of attack is Jack Stillinger's scholarly edition of Keats-gives you a variorum apparatus.`
+},
+{
+  word: "ve",
+  book: "Theory of Literature",
+  sentence: `power over the Orient than it is as a veridic discourse about the Orient`
+},
+{
+  word: "verdure",
+  book: "Barthes A Biography",
+  sentence: `a pine forest enabled patients to stroll in the verdure and benefit from the pure air:`
+},
+{
+  word: "Verein",
+  book: "Freud In His Time and Ours",
+  sentence: `for the normalization of psychoanalytic practice and the worldwide extension of the Verein.`
+},
+{
+  word: "verger",
+  book: "Palimpsest",
+  sentence: `Her way is blocked by a kindly old verger, however, who explains that women were not allowed in the library unless accompanied by a Fellow of the college`,
+},
+{
+  word: "Vergiinglichkeit",
+  book: "Freud - An Intellectual Biography",
+  sentence: `First, for both Goethe and Freud, "transience," Vergiinglichkeit, is the "name for the human condition" insofar as it is "marked by timeboundedness and impermanence."`
+},
+{
+  word: "veridical",
+  book: "Reading Derrida's of Grammatology",
+  sentence: `The awakening of writing, /'eveil de l'ecriture, has thus a transitivity, which Derrida again conveys and even more clearly with his own striking image that 'opens an eye at the centre of language'.`
+},
+{
+  word: "verismo",
+  book: "Barthes A Biography",
+  sentence: `However, verismo and expressive intention are always condemned by him.`
+},
+{
+  word: "veronal",
+  book: "Freud In His Time and Ours",
+  sentence: `He never found out that she had taken veronal with her in case she were tortured.`
+},
+{
+  word: "vesture",
+  book: "Barthes A Biography",
+  sentence: `restored to the choral sections the vesture and support of a melody in complete conformity with the canons of Greek music',`
+},
+{
+  word: "voivodship",
+  book: "Goebbels",
+  sentence: `The Nazis relinquished Lithuania, and received in return the voivodship of Lublin and the eastern part of the voivodship of Warsaw.`
+},
+{
+  word: "volatilize",
+  book: "Philology and Its Histories",
+  sentence: `Schopenhauer gives Nietzsche one pretext to volatilize the concept of "language," but not the only pretext.`
+},
+{
+  word: "Welta.nscllauung",
+  book: "Freud - An Intellectual Biography",
+  sentence: `for the normalization of psychoanalytic practice and the worldwide extension of the Verein.`
+},
+{
+  word: "Weltanschauung",
+  book: "Freud In His Time and Ours",
+  sentence: `Thus he found himself in contradiction with the evolution of the Verein, which encompassed doctors from virtually all the European countries and the United States:`
+},
+{
+  word: "Weltanschauung.22",
+  book: "Freud In His Time and Ours",
+  sentence: `Freud had never stopped contradicting himself by affirming that psychoanalysis was not a Weltanschauung.22`
+},
+{
+  word: "Weltansclzauzmg",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Weltanschauung.22`
+},
+{
+  word: "whiling",
+  book: "Walther Benjamin A Critical Life",
+  sentence: `I would prefer any occupa- tion ... to whiling my time away in the editorial antechambers of the`
+},
+{
+  word: "Wissenscllafilich",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Wissenscllafilich the Philippson Bible certainly was, but its intent was not to debunk.`
+},
+{
+  word: "Wissenstrieb",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Freud may have been threatened by the very intensity of his Wissenstrieb, his drive for knowledge, because it raised the specter of omnipotence, and Freud was afraid of becoming overwhelmed by it.`
+},
+{
+  word: "wresting",
+  book: "Palimpsest",
+  sentence: `Dh Fortune, thy wresting wavering state`
+},
+{
+  word: "writing",
+  book: "Cultural Graphology",
+  sentence: `we might say that writing is what just happened.`
+},
+{
+  word: "Zeitgeist",
+  book: "Freud - An Intellectual Biography",
+  sentence: `Speculations about the Zeitgeist are always dicey and, as a rule, should be resisted.`
+}
 ];
