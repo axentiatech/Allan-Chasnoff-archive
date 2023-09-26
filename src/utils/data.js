@@ -1,5 +1,5 @@
 export const booksData = [
-  {
+{
     name: "Asemic The Art Of Writing",
     author: "Peter Schwenger",
     src: "/thumbnails/1.png",
@@ -49,4 +49,56 @@ export const booksData = [
     author: "Tiphaine Samoyault",
     src: "/thumbnails/10.png",
   },
+  {
+    name: "Seven Types of Ambiguity",
+    author: "William Empson",
+    src: "/thumbnails/1.png"
+  },
+  {
+    name: "Theft",
+    author: "James Boyle",
+    src: "/thumbnails/2.png"
+  },
+  {
+    name: "Shanzhai Deconstruction in Chinese",
+    author: "Byung-Chul Han",
+    src: "/thumbnails/3.png"
+  },
+  {
+    name: "Picasso and the Painting That Shocked the World",
+    author: "Miles Unger",
+    src: "/thumbnails/4.png"
+  },
+  {
+    name: "Becoming Myself",
+    author: "Irvin D. Yalom",
+    src: "/thumbnails/5.png"
+  },
+  {
+    name: "On Liberty",
+    author: "JS Mill",
+    src: "/thumbnails/6.png"
+  },
+  {
+    name: "An open letter to H Arendt",
+    author: "zarembyj",
+    src: "/thumbnails/7.png"
+  },
+  {
+    name: "Bard Pres response to.com",
+    author: "zarembyj",
+    src: "/thumbnails/8.png"
+  },
+  {
+    name: "Areopagitica",
+    author: "zarembyj",
+    src: "/thumbnails/9.png"
+  },
+  {
+    name: "Fuji GFX Manual",
+    author: "FUJIFILM Corporation",
+    src: "/thumbnails/10.png"
+  }
+
+
 ];
