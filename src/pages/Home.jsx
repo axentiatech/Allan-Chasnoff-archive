@@ -111,7 +111,10 @@ export default function Home() {
             controls
             poster="/thumnailhome.png"
           >
-            <source src="/video.mp4" type="video/mp4" />
+            <source
+              src="https://readandnote.com/ac_archive/vid01.mp4"
+              type="video/mp4"
+            />
           </video>
           {/* <i style={{ color: "white", marginBottom: "3rem" }}>
             © Chasanoff Archive - 2023
