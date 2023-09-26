@@ -1054,4 +1054,175 @@ export const words = [
         as the guise or disguise of a primary 'riting`,
     book: "Of Grammatology",
   },
+  {
+    word: "habilitation",
+    sentence: `when prospects of an academic habilitation in Switzer- land seemed to open up for Benjamin,`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word: "haggadic",
+    sentence: `"He gave up truth so that he could hold on to its transmissibility, the haggadic element halberdiers`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word: "hecatombs",
+    sentence: `"The 'intellectuals' among our 'core- ligionists' are the first to offer the oppressors hecatombs from their own circles, so as to remain spared themselves" heresiarchs`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word: "heresiarchs",
+    sentence: `of commentary and history, and even the works of the heresiarchs themselves, in order to edit, collate, and rebut them.`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word:"hetaeric",
+    sentence: `I emphasized from the very beginning that the pupils "who have lost the Scripture" do not belong to the hetaeric world, because I rank them as assistants to those creatures for whom, in Kafka's words, there is "an infinite amount of hope."`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word:"heteronomies",
+    sentence: `The vast social apparatus, which produces a semblance of harmony and integrity that masks the brutal heteronomies of modern life,`,
+    book: "Walther Benjamin A Critical Life"
+},
+{
+    word:"heteronomous",
+    sentence: `in love with \Vilhelm Fliess, he became completely enthralled with him and could not appropriate his own autonomy until he worked through that thralldom, that extreme heteronomy, and resolved it.`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word:"heteronomy",
+    sentence: `in love with \Vilhelm Fliess, he became completely enthralled with him and could not appropriate his own autonomy until he worked through that thralldom, that extreme heteronomy, and resolved it.`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word:"heterozygosity",
+    sentence: `Alleles, chromosomes, heterozygosity-when he first sat down to it, he confessed to Bush, he didn't even understand the words.`,
+    book: "A Mind At Play"
+},
+{
+    word:"hierogamic",
+    sentence: `Freud inscribed himself unwittingly in the straight line of descent of a symbologist and hierogamic literature that took the mysteries of da Vinci's life and work as its theme, making this universal painter the emblem of a sexualized vision of the Holy Scriptures.`,
+    book: "Freud In His Time and Ours"
+},
+{
+    word:"historicism",
+    sentence: `This by way of prelude: Gadamer is opposed not only to historicism but to what he calls "romanticism" in hermeneutics because,`,
+    book: "Theory of Literature"
+},
+{
+    word:"hypokhdgne",
+    sentence: `A humanities teacher spoke very highly of the hypodigm, a broad and varied training that meant you did not have to specialize too early;`,
+    book: "Derrida A Biography"
+},
+{
+    word:"hypokluigne",
+    sentence: `1 have some interesting teaching to do (philosophy in hypokluigne) that`,
+    book: "Derrida A Biography"
+},
+{
+    word:"hypostases",
+    sentence: `its hypostases: society, history, psyche, liberty [Le., agency]) beneath the work:`,
+    book: "Theory of Literature"
+},
+{
+    word: "hypostatization",
+    sentence: `The way to correct the one-sided hypostatization of Oedipal theory over pre-Oedipal is not, he observes, to substitute "a paternal concept of reality" with "a maternal one" or, as Andre Green puts it somewhat more graphically, to replace "the Father of the horde with the Great Mother Goddess.`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word: "iatrogenic",
+    sentence: `but is prepared to acknowledge that Emma's difficulties were iatrogenic and to accept responsibility on his and Fliess's behalf:`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word: "immanence",
+    sentence: `Without altogether daring to, he would like to have let himself sink into that state of immanence so eloquently described by Camus in Nuptials.`,
+    book: "Derrida A Biography"
+},
+{
+    word: "immanent",
+    sentence: `For a deep and sustained reflection on the problem see Aristides Baltas, Peeling potatoes and grinding lenses: Spinoza and young Jf'it/genstehl converse on immanence and its logic`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word: "immanently",
+    sentence: `a naturalistic worldview in which human beings were to be understood immanently as thoroughly embedded in the natural world.`,
+    book: "Freud - An Intellectual Biography"
+},
+{
+    word: "Immolating",
+    sentence: `Immolating the Talmud was just the beginning of the future Pope Paul IV's campaign to regulate theological thought. When he became Pope, one of his first acts was to order the publication of a register of forbidden books, the Index Librorum Prohibitorum. With the Protestant Reformation well under way in western Europe the Catholic Church's concerns about heresy were far greater than just worrying about what the Jews were reading. imputation`,
+    book: "The Talmud"
+},
+{
+    word: "imputation",
+    sentence: `He has been a voice of moderation without incurring any imputation of selling out, although his debates with Houston Baker over the years, as reflected in the exchange you'll find in your anthology, might suggest otherwise.`,
+    book: "Theory of Literature"
+
+},
+{
+    word: "incipit",
+    sentence: `Here perhaps we have an inventive incipit for a lecture.`,
+    book: "Derrida A Biography"
+},
+{
+    word: "incommensurability",
+    sentence: `There are points of divergence here, then; one is tempted to say points of incommensurability.`,
+    book: "Theory of Literature"
+},
+{
+    word: "incommensurable",
+    sentence: `If goods, hav- ing incommensurable uses-cloth on the one hand and grain on the other-were to be exchanged, they needed some common measure of`,
+    book: "Karl Marx"
+},
+{
+  word: "incunable",
+  sentence: "not to Pope Paul IV, who started the Index of Prohibited Books during the so· called incunable era following the advent of movable type;",
+  author: "Palimpsest",
+}
+{
+  word: "ineluctable",
+  sentence: "are the wanderings of a way of thinking that is faithful and attentive to the ineluctable world of the future which proclaims itself at present, beyond the barriers of knowledge.",
+  author: "Cultural Graphology",        
+},
+{
+  word: "instauration",
+  sentence: "After Descartes's instauration of the cogito at the dawn of modern philosophy-that",
+  author: "Walther Benjamin A Critical Life",
+},
+{
+  word: "interdictive",
+  sentence: "An instinctual id, buried in the ruins of an ancestral genealogy; an interdictive superego, symbolizing an inaccessible happiness; and an ego divided between memory and history.",
+  author: "Freud In His Time and Ours",
+},
+{
+  word: "interlocutor",
+  sentence: "Strictly speaking, they may not have been Lufimenschen, but none of them possessed the education or Building to serve as an adequate interlocutor for Freud, much less the kind of intellectual firepower Fliess had that had generated so much intellectual excitement in the 1890s.",
+  author: "Freud - An Intellectual Biography",
+},
+{
+  word: "interlocutors",
+  sentence: `this "Aristophanesque" farce, the writer created a satire out of the illusion personified by a naive young woman who was sowing discord among her interlocutors.`,
+  author: "Freud In His Time and Ours",
+},
+{
+  word: "intermezzo",
+  sentence: "following his two terms in G6ttingen and his intermezzo in Zurich,",
+  author: "Habermas A Biography",
+},
+{
+  word: "irredentists",
+  sentence: "Very similar to the Viennese of the Belle Epoque, the Triestine intellectuals saw themselves as irredentists.",
+  author: "Freud In His Time and Ours",
+},
+{
+  word: "irremissible",
+  sentence: `"Freud was closed off to music," that in fact he "had a 'total, irremissible occlusion to it." Rolland, Fisher reports, was "troubled ... by this piece of information."`,
+  author: "Freud - An Intellectual Biography",
+},
+{
+  word: "kairos",
+  sentence: "and Derrida is the knowledge of this urgency and of this time, this kairos.",        
+  author: "Reading Derrida's of Grammatology",
+},
 ];
