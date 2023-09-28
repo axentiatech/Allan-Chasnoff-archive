@@ -9,6 +9,7 @@ import {
 import React, { useRef } from "react";
 import Footer from "../components/Footer";
 import { words } from "../constants/words";
+import Highlighter from "react-highlight-words";
 
 export default function Words() {
   // Function to group words by their initial letter
@@ -176,7 +177,7 @@ function EachCard(props) {
             justifyContent: "space-between",
           }}
         >
-          <Typography
+          {/* <Typography
             sx={{
               fontSize: "0.8rem",
               marginBottom: "1%",
@@ -185,9 +186,16 @@ function EachCard(props) {
                 sm: "start",
               },
             }}
-          >
-            {props.word.sentence}
-          </Typography>
+          > */}
+          <div style={{ padding: "0.5rem", fontSize: "0.8rem" }}>
+            <Highlighter
+              highlightStyle={{ backgroundColor: "skyblue" }}
+              searchWords={[props?.word?.word]}
+              autoEscape={true}
+              textToHighlight={props?.word?.sentence}
+            />
+          </div>
+          {/* </Typography> */}
           <Typography
             sx={{
               fontSize: "0.6rem",
