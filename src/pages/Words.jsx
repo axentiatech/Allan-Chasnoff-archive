@@ -7,9 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useRef } from "react";
+import Highlighter from "react-highlight-words";
 import Footer from "../components/Footer";
 import { words } from "../constants/words";
-import Highlighter from "react-highlight-words";
 
 export default function Words() {
   // Function to group words by their initial letter
@@ -196,15 +196,44 @@ function EachCard(props) {
             />
           </div>
           {/* </Typography> */}
-          <Typography
-            sx={{
-              fontSize: "0.6rem",
-              color: "#45accf",
-              textAlign: { xs: "center", sm: "end" },
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "end",
             }}
           >
-            {props.word.book}
-          </Typography>
+            <Typography
+              sx={{
+                fontSize: "0.6rem",
+                color: "gray",
+                textDecoration: "underline",
+                textDecorationStyle: "dotted",
+                textAlign: { xs: "center", sm: "end" },
+              }}
+            >
+              {props.word.datetime}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "0.6rem",
+                color: "black",
+                marginRight: "4px",
+                marginLeft: "4px",
+                textAlign: { xs: "center", sm: "end" },
+              }}
+            >
+              {props.word.page}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "0.6rem",
+                color: "#45accf",
+                textAlign: { xs: "center", sm: "end" },
+              }}
+            >
+              {props.word.book}
+            </Typography>
+          </div>
         </Box>
       </CardContent>
     </Card>
