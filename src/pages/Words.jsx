@@ -202,7 +202,7 @@ function EachCard(props) {
               justifyContent: "end",
             }}
           >
-            <Typography
+            {/* <Typography
               sx={{
                 fontSize: "0.6rem",
                 color: "gray",
@@ -212,7 +212,7 @@ function EachCard(props) {
               }}
             >
               {props.word.datetime}
-            </Typography>
+            </Typography> */}
             <Typography
               sx={{
                 fontSize: "0.6rem",
